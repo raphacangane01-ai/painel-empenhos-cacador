@@ -1,0 +1,232 @@
+{
+ "veiculos": [
+  {
+   "placa": "RXR1H38",
+   "totalGasto": 19431.72,
+   "qtdServicos": 4,
+   "servicos": [
+    {
+     "data": "2026-02-10",
+     "oficina": "AUTO COLETIVO CACADOR LTDA",
+     "descricao": "MAO DE OBRA BORRACHARIA / REMOVER DESMONTAR E MONTAR PNEUS TRASEIROS|MAO DE OBRA FUNILARIA / REMOVER AJUSTAR E TR. PARABRISA",
+     "valor": 11777.72,
+     "grupo": "903024"
+    },
+    {
+     "data": "2026-03-30",
+     "oficina": "23.903.858 LEANDRO DANILO CHIARELLO",
+     "descricao": "SERVIÇOS DE PINTURA E MONTAGEM ORCAMENTO 1097487 RECUPERAÇÃO/TROCA DE PEÇAS REF. MICROONIBUS MARCOPOLO MPOLO VOLARE CINCO EXECUTIVO (DIESEL)(E5) ANO 2021/2021 PLACA RXR-1H38",
+     "valor": 7100.0,
+     "grupo": "1009915"
+    },
+    {
+     "data": "2026-05-13",
+     "oficina": "RECUPERADORA DE PNEUS RIO DO PEIXE LTDA",
+     "descricao": "TROCA DE PNEU DE MICRO ÔNIBUS",
+     "valor": 54.0,
+     "grupo": "1012424"
+    },
+    {
+     "data": "2026-07-07",
+     "oficina": "",
+     "descricao": "SERVIÇO DE INSPEÇÃO VEICULAR - LAUDO SIE - VEÍCULO PLACAS: RXR1H38",
+     "valor": 500.0,
+     "grupo": "1047768"
+    }
+   ]
+  },
+  {
+   "placa": "RAG9A13",
+   "totalGasto": 9017.02,
+   "qtdServicos": 8,
+   "servicos": [
+    {
+     "data": "2025-11-17",
+     "oficina": "GROCH FUNILARIA E PINTURA",
+     "descricao": "REPARO E PINTURA PARACHOQUE TRASEIRO",
+     "valor": 2000.0,
+     "grupo": "810871"
+    },
+    {
+     "data": "2026-02-16",
+     "oficina": "BONATTO AUTOPEÇAS LTDA - EPP",
+     "descricao": "(sem descrição detalhada na NF)",
+     "valor": 236.6,
+     "grupo": "902523"
+    },
+    {
+     "data": "2026-03-03",
+     "oficina": "INSPECAMPOS INSPECAO VEICULAR LTDA",
+     "descricao": "SERVIÇO DE INSPEÇÃO VEICULAR - LAUDO SIE",
+     "valor": 500.0,
+     "grupo": "inspecampos-0303"
+    },
+    {
+     "data": "2026-03-12",
+     "oficina": "RONALDO CERRY",
+     "descricao": "REPARO ELÉTRICO/MECÂNICO SISTEMA CADEIRANTE/EQUIPAMENTO DE ACESSIBILIDADE",
+     "valor": 600.0,
+     "grupo": "cerry-0312"
+    },
+    {
+     "data": "2026-03-19",
+     "oficina": "TECNICAR CENTRO AUTOMOTIVO LTDA",
+     "descricao": "peças (radiador, reservatório, tampa, aditivo) + mão de obra - ref. OS 1888",
+     "valor": 1660.0,
+     "grupo": "tecnicar-1903"
+    },
+    {
+     "data": "2026-06-26",
+     "oficina": "AUTO COLETIVO CACADOR LTDA",
+     "descricao": "MAO DE OBRA MECANICA / REMOVER AJUSTAR E TR. BARRA DIRECAO CURTA",
+     "valor": 891.96,
+     "grupo": "1031857"
+    },
+    {
+     "data": "2026-06-26",
+     "oficina": "PNEU MAIS LTDA",
+     "descricao": "CONSERTO DE PNEU -................................ QTDE.: R$ 1,00 VL UN.: R$ 50,00 VL TOT.: R$ 50,00",
+     "valor": 50.0,
+     "grupo": "1022928"
+    },
+    {
+     "data": "2026-07-16",
+     "oficina": "AUTO COLETIVO CACADOR LTDA",
+     "descricao": "MAO DE OBRA ELETRICA / TESTAR AJUSTAR E TR. CHAVE DIRECIONAL VOLARE / SUBSTITUIDO FUSIVEIS QUEIMADOS / TROCADO INTERRUPTOR PISCA ALERTA / SUBSTITUIDO SOQUETES E LAMPADAS QUEIMADAS / TROCADO MOTOR LIMPADOR PARABRISA (EM CURTO CIRCUITO) / COMPLETADO ADITIVO E AGUA DESMINERALIZADA / TR. LANTERNA DIRECIONAL LATERAL L. E",
+     "valor": 3078.46,
+     "grupo": "1050129"
+    }
+   ]
+  },
+  {
+   "placa": "QIJ1629",
+   "totalGasto": 4334.0,
+   "qtdServicos": 3,
+   "servicos": [
+    {
+     "data": "2026-04-01",
+     "oficina": "PRECISAO AUTO SERVICE LTDA",
+     "descricao": "(sem descrição detalhada na NF)",
+     "valor": 2115.0,
+     "grupo": "996723"
+    },
+    {
+     "data": "2026-05-07",
+     "oficina": "PRECISAO AUTO SERVICE LTDA",
+     "descricao": "(sem descrição detalhada na NF)",
+     "valor": 395.0,
+     "grupo": "1009994"
+    },
+    {
+     "data": "2026-07-17",
+     "oficina": "GRID CENTRO AUTOMOTIVO LTDA",
+     "descricao": "(sem descrição detalhada na NF)",
+     "valor": 1824.0,
+     "grupo": "1049380"
+    }
+   ]
+  },
+  {
+   "placa": "SXT4A29",
+   "totalGasto": 2733.79,
+   "qtdServicos": 1,
+   "servicos": [
+    {
+     "data": "2026-02-06",
+     "oficina": "CARBONI DISTRIBUIDORA DE VEICULOS LTDA - IVDA",
+     "descricao": "(sem descrição detalhada na NF)",
+     "valor": 2733.79,
+     "grupo": "902345"
+    }
+   ]
+  },
+  {
+   "placa": "QIV6694",
+   "totalGasto": 2317.8,
+   "qtdServicos": 3,
+   "servicos": [
+    {
+     "data": "2026-02-05",
+     "oficina": "50.833.503 MAICON EVERTON CARNEIRO",
+     "descricao": "SERVIÇO (mecânica geral - sem detalhamento específico na NF)",
+     "valor": 830.0,
+     "grupo": "903005"
+    },
+    {
+     "data": "2026-05-05",
+     "oficina": "GRID CENTRO AUTOMOTIVO LTDA",
+     "descricao": "(sem descrição detalhada na NF)",
+     "valor": 1045.0,
+     "grupo": "1008222"
+    },
+    {
+     "data": "2026-05-22",
+     "oficina": "GRID CENTRO AUTOMOTIVO LTDA",
+     "descricao": "(sem descrição detalhada na NF)",
+     "valor": 442.8,
+     "grupo": "1010002"
+    }
+   ]
+  },
+  {
+   "placa": "QIF4649",
+   "totalGasto": 1650.0,
+   "qtdServicos": 1,
+   "servicos": [
+    {
+     "data": "2026-04-02",
+     "oficina": "GRID CENTRO AUTOMOTIVO LTDA",
+     "descricao": "(sem descrição detalhada na NF)",
+     "valor": 1650.0,
+     "grupo": "985336"
+    }
+   ]
+  },
+  {
+   "placa": "MHO7933",
+   "totalGasto": 950.0,
+   "qtdServicos": 1,
+   "servicos": [
+    {
+     "data": "2026-03-26",
+     "oficina": "FRANCA & CIA LTDA",
+     "descricao": "(sem descrição detalhada na NF)",
+     "valor": 950.0,
+     "grupo": "934225"
+    }
+   ]
+  },
+  {
+   "placa": "QIE4718",
+   "totalGasto": 180.0,
+   "qtdServicos": 1,
+   "servicos": [
+    {
+     "data": "2026-04-24",
+     "oficina": "",
+     "descricao": "serviço de guincho veiculo spin QIE 4718",
+     "valor": 180.0,
+     "grupo": "1001338"
+    }
+   ]
+  }
+ ],
+ "semVeiculo": [
+  {
+   "grupo": "911924",
+   "data": "2026-02-26",
+   "oficina": "",
+   "descricao": "INSTALAÇÃO DE SENSOR NO FAROL PARA ABERTURA DE PORTÃO - CONFORME ORÇAMENTO 1092006 (confirmado: é de veículo, placa a identificar)",
+   "valor": 39.2
+  },
+  {
+   "grupo": "1007369",
+   "data": "2026-04-29",
+   "oficina": "TECNICAR CENTRO AUTOMOTIVO LTDA.",
+   "descricao": "mao de obra R$ 1850,00",
+   "valor": 9320.0
+  }
+ ],
+ "totalGeral": 49973.53,
+ "atualizadoEm": "2026-08-10T00:00:00-03:00"
+     }
