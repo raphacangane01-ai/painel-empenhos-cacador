@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+  <html lang="pt-BR">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Painel de Empenhos por Fornecedor</title>
+<style>
+  :root {
+    --azul: #0b3d62;
+    --azul-claro: #eaf2f8;
+          --verde: #1e8e5a;
+    --laranja: #c76a1c;
+          --cinza: #6b7280;
+    --borda: #e2e8f0;
+      }
+  * { box-sizing: border-box; }
+  body {
+        margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    background: #f4f6f8;
+        color: #1f2937;
+}
+  header {
+        background: var(--azul);
+    color: white;
+    padding: 20px 16px;
+}
+  header h1 { margin: 0 0 4px; font-size: 1.25rem; }
+  header p { margin: 2px 0; font-size: 0.85rem; opacity: 0.9; }
+  .container { max-width: 1000px; margin: 0 auto; padding: 16px; }
+  .aviso {
+        background: #fff7ed;
+        border: 1px solid #fdba74;
+    color: #9a5b13;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    margin-bottom: 16px;
+}
+  .cards {
+        display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    margin-bottom: 20px;
+    }
+  .card {
+        background: white;
+    border-radius: 10px;
+    padding: 14px;
+    border: 1px solid var(--borda);
+  }
+  .card .label { font-size: 0.72rem; color: var(--cinza); text-transform: uppercase; letter-spacing: 0.03em; }
+  .card .valor { font-size: 1.15rem; font-weight: 700; margin-top: 4px; }
+  .card.material { border-top: 3px solid var(--azul); }
+  .card.servico { border-top: 3px solid var(--laranja); }
+  .secao-titulo {
+        font-size: 0.95rem;
+    font-weight: 700;
+    margin: 22px 0 10px;
+    color: var(--azul);
+  }
+  .empenho {
+    background: white;
+    border: 1px solid var(--borda);
+    border-radius: 10px;
+    margin-bottom: 12px;
+    overflow: hidden;
+  }
+  .empenho-cab {
+        padding: 12px 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+  .empenho-cab .titulo { font-weight: 700; font-size: 0.9rem; }
+  .tag {
+        font-size: 0.68rem;
+    padding: 2px 8px;
+    border-radius: 999px;
+    font-weight: 600;
+}
+  .tag.material { background: var(--azul-claro); color: var(--azul); }
+  .tag.servico { background: #fdf1e6; color: var(--laranja); }
+    .empenho-resumo { font-size: 0.78rem; color: var(--cinza); }
+  .empenho-corpo { display: none; padding: 0 14px 14px; font-size: 0.82rem; }
+  .empenho.aberto .empenho-corpo { display: block; }
+  table { width: 100%; border-collapse: collapse; margin-top: 8px; font-size: 0.78rem; }
+  th, td { text-align: left; padding: 6px 4px; border-bottom: 1px solid var(--borda); }
+  th { color: var(--cinza); font-weight: 600; }
+  .nf-lista { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+  .nf-chip {
+        background: #f1f5f9;
+        border: 1px solid var(--borda);
+    border-radius: 6px;
+    padding: 3px 8px;
+    font-size: 0.72rem;
+    }
+  footer { text-align: center; padding: 20px; font-size: 0.72rem; color: var(--cinza); }
+      .seta { transition: transform 0.15s; }
+  .empenho.aberto .seta { transform: rotate(180deg); }
+</style>
+  </head>
+  <body>
+  <header>
+    <h1 id="titulo-fornecedor">Carregando...</h1>
+    <p id="subtitulo"></p>
+    <p id="atualizado"></p>
+  </header>
+
+  <div class="container">
+  <div class="aviso" id="aviso" style="display:none;"></div>
+
+    <div class="cards" id="cards"></div>
+
+    <div class="secao-titulo">Empenhos e notas fiscais</div>
+    <div id="lista-empenhos"></div>
+
+  <footer>
+    Saldo empenhado = soma das emissoes de empenho. Saldo gasto = soma das liquidacoes. Saldo disponivel = empenhado - gasto - anulado.
+    </footer>
+</div>
+
+  <script>
+  function moeda(v) {
+  return v.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+}
+
+  function classificar(elementoCodigo, elementoNome) {
+      const nome = (elementoNome || '').toLowerCase();
+    if (nome.includes('material')) return 'material';
+  if (nome.includes('servi')) return 'servico';
+  return 'outro';
+  }
+
+
+fetch('./data.json')
+    .then(r => r.json())
+    .then(dados => {
+  document.getElementById('titulo-fornecedor').textContent =
+        dados.fornecedor.codigo + ' - ' + dados.fornecedor.nome;
+    document.getElementById('subtitulo').textContent =
+            dados.unidadeOrcamentaria + ' - ' + dados.orgaoOrcamentario;
+    document.getElementById('atualizado').textContent =
+            'Atualizado em ' + new Date(dados.atualizadoEm).toLocaleString('pt-BR');
+
+if (dados.observacao) {
+      const av = document.getElementById('aviso');
+      av.style.display = 'block';
+      av.textContent = dados.observacao;
+}
+
+    let totais = {
+      material: { empenhado: 0, gasto: 0 },
+      servico: { empenhado: 0, gasto: 0 }
+                };
+
+    const listaEl = document.getElementById('lista-empenhos');
+
+dados.empenhos.forEach(emp => {
+        const classe = emp.classificacao || classificar(emp.elementoCodigo, emp.elementoNome);
+      const gasto = emp.movimentacoes
+        .filter(m => m.tipo.startsWith('Liquida'))
+        .reduce((s, m) => s + m.valor, 0);
+
+      if (totais[classe]) {
+        totais[classe].empenhado += emp.valorEmpenhado;
+        totais[classe].gasto += gasto;
+      }
+
+const notas = new Map();
+      emp.movimentacoes.forEach(m => (m.notasFiscais || []).forEach(nf => {
+                notas.set(nf.numero, nf);
+}));
+
+      const div = document.createElement('div');
+      div.className = 'empenho';
+
+div.innerHTML = 
+  '<div class="empenho-cab" onclick="this.parentElement.classList.toggle(&quot;aberto&quot;)">' +
+  '<div><div class="titulo">Empenho ' + emp.numero + ' <span class="tag ' + classe + '">' +
+  (classe === 'material' ? 'Material' : classe === 'servico' ? 'Servico' : 'Outro') +
+  '</span></div>' +
+  '<div class="empenho-resumo">' + emp.especie + ' - ' + emp.elementoCodigo + ' - ' + emp.elementoNome +
+  ' - Empenhado ' + moeda(emp.valorEmpenhado) + ' - Gasto ' + moeda(gasto) + '</div></div>' +
+  '<span class="seta">v</span></div>' +
+  '<div class="empenho-corpo">' +
+  '<div><strong>Objeto:</strong> ' + (emp.objetoResumido || '-') + '</div>' +
+  '<table><thead><tr><th>Data</th><th>Tipo</th><th>Valor</th></tr></thead><tbody>' +
+  emp.movimentacoes.map(function(m) {
+  return '<tr><td>' + new Date(m.data).toLocaleDateString('pt-BR') + '</td><td>' + m.tipo + '</td><td>' + moeda(m.valor) + '</td></tr>';
+}).join('') +
+  '</tbody></table>' +
+  '<div style="margin-top:8px;"><strong>Notas fiscais vinculadas:</strong></div>' +
+  '<div class="nf-lista">' +
+  ([...notas.values()].map(function(nf) {
+  return '<span class="nf-chip">NF ' + nf.numero + ' - ' + new Date(nf.data).toLocaleDateString('pt-BR') + ' - ' + moeda(nf.valor) + '</span>';
+}).join('') || '<span class="nf-chip">Nenhuma</span>') +
+  '</div></div>';
+
+        listaEl.appendChild(div);
+});
+
+const cardsEl = document.getElementById('cards');
+    const linhas = [
+      ['material', 'Empenhado - Material', totais.material.empenhado],
+['material', 'Gasto - Material', totais.material.gasto],
+      ['material', 'Disponivel - Material', totais.material.empenhado - totais.material.gasto],
+['servico', 'Empenhado - Servico', totais.servico.empenhado],
+      ['servico', 'Gasto - Servico', totais.servico.gasto],
+['servico', 'Disponivel - Servico', totais.servico.empenhado - totais.servico.gasto],
+    ];
+cardsEl.innerHTML = linhas.map(function(item) {
+      var classe = item[0]; var label = item[1]; var valor = item[2];
+return '<div class="card ' + classe + '"><div class="label">' + label + '</div><div class="valor">' + moeda(valor) + '</div></div>';
+}).join('');
+})
+.catch(function(err) {
+    document.getElementById('titulo-fornecedor').textContent = 'Erro ao carregar dados';
+    console.error(err);
+});
+</script>
+</body>
+</html>
