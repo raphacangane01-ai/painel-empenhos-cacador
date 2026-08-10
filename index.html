@@ -190,13 +190,13 @@ div.innerHTML =
   '<div><strong>Objeto:</strong> ' + (emp.objetoResumido || '-') + '</div>' +
   '<table><thead><tr><th>Data</th><th>Tipo</th><th>Valor</th></tr></thead><tbody>' +
   emp.movimentacoes.map(function(m) {
-  return '<tr><td>' + new Date(m.data).toLocaleDateString('pt-BR') + '</td><td>' + m.tipo + '</td><td>' + moeda(m.valor) + '</td></tr>';
+  return '<tr><td>' + new Date(m.data+'T00:00:00').toLocaleDateString('pt-BR') + '</td><td>' + m.tipo + '</td><td>' + moeda(m.valor) + '</td></tr>';
 }).join('') +
   '</tbody></table>' +
   '<div style="margin-top:8px;"><strong>Notas fiscais vinculadas:</strong></div>' +
   '<div class="nf-lista">' +
   ([...notas.values()].map(function(nf) {
-  return '<span class="nf-chip">NF ' + nf.numero + ' - ' + new Date(nf.data).toLocaleDateString('pt-BR') + ' - ' + moeda(nf.valor) + '</span>';
+  return '<span class="nf-chip">NF ' + nf.numero + ' - ' + new Date(nf.data+'T00:00:00').toLocaleDateString('pt-BR') + ' - ' + moeda(nf.valor) + '</span>';
 }).join('') || '<span class="nf-chip">Nenhuma</span>') +
   '</div></div>';
 
