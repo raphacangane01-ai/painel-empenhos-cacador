@@ -1,0 +1,30 @@
+{
+  "fornecedor": { "codigo": "18921", "nome": "MAXIFROTA SERVICOS DE MANUTENCAO DE FROTA LTDA" },
+  "unidadeOrcamentaria": "2006 - SECRETARIA DE ESPORTES E LAZER",
+  "orgaoOrcamentario": "2000 - CHEFIA DO EXECUTIVO",
+  "atualizadoEm": "2026-08-10T13:15:00-03:00",
+  "observacao": "AMOSTRA PARCIAL para validacao do modelo - baseada no empenho 202/2026 (1 de N empenhos do relatorio). A automacao em producao vai processar todas as paginas/empenhos do fornecedor e recalcular estes numeros.",
+  "empenhos": [
+    {
+      "numero": "202/2026",
+      "especie": "Estimativa",
+      "categoria": "Comum",
+      "elementoCodigo": "30",
+      "elementoNome": "Material de Consumo",
+      "classificacao": "material",
+      "detalhamento": "39 - material para manutencao de veiculos",
+      "fonteRecurso": "1100 - Recursos nao Vinculados de Impostos",
+      "objetoResumido": "Empenho estimativo para futura e eventual aquisicao de materiais, atraves de empresa especializada no gerenciamento da manutencao preditiva, preventiva e corretiva de veiculos automotores e equipamentos do Municipio de Cacador.",
+      "valorEmpenhado": 30000.00,
+      "movimentacoes": [
+        { "data": "2026-01-16", "sequencia": "9297004", "tipo": "Emissao de Empenho Orcamentario", "valor": 30000.00, "notasFiscais": [] },
+        { "data": "2026-02-03", "sequencia": "9671758", "tipo": "Liquidacao de Empenho Orcamentario", "valor": 711.93, "notasFiscais": [{ "numero": "379983", "data": "2026-01-09", "valor": 711.93 }] },
+        { "data": "2026-02-06", "sequencia": "9674938", "tipo": "Liquidacao de Empenho Orcamentario", "valor": 2067.37, "notasFiscais": [{ "numero": "395845", "data": "2026-02-01", "valor": 2067.37 }] },
+        { "data": "2026-02-06", "sequencia": "9674944", "tipo": "Retencao/Consignacao de Empenho Orcamentario", "avLiquidacao": "9674938", "valor": 24.81, "notasFiscais": [{ "numero": "395845", "data": "2026-02-01", "valor": 24.81 }], "favorecido": "20042 - IRRF" },
+        { "data": "2026-04-16", "sequencia": "10155199", "tipo": "Pagamento de Empenho Orcamentario", "avLiquidacao": "9671758", "valor": 711.93, "notasFiscais": [{ "numero": "379983", "data": "2026-01-09", "valor": 711.93 }] },
+        { "data": "2026-04-16", "sequencia": "10155202", "tipo": "Pagamento de Empenho Orcamentario", "avLiquidacao": "9674938", "valor": 2042.56, "notasFiscais": [{ "numero": "395845", "data": "2026-02-01", "valor": 2042.56 }] },
+        { "data": "2026-04-30", "sequencia": "10158812", "tipo": "Liquidacao de Empenho Orcamentario", "valor": 26667.59, "notasFiscais": [{ "numero": "422996", "data": "2026-04-01", "valor": 26667.59 }] }
+      ]
+    }
+  ]
+}
