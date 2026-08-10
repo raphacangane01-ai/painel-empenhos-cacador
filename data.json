@@ -1,9 +1,12 @@
 {
-  "fornecedor": { "codigo": "18921", "nome": "MAXIFROTA SERVICOS DE MANUTENCAO DE FROTA LTDA" },
+  "fornecedor": {
+    "codigo": "18921",
+    "nome": "MAXIFROTA SERVICOS DE MANUTENCAO DE FROTA LTDA"
+  },
   "unidadeOrcamentaria": "2006 - SECRETARIA DE ESPORTES E LAZER",
   "orgaoOrcamentario": "2000 - CHEFIA DO EXECUTIVO",
-  "atualizadoEm": "2026-08-10T13:15:00-03:00",
-  "observacao": "AMOSTRA PARCIAL para validacao do modelo - baseada no empenho 202/2026 (1 de N empenhos do relatorio). A automacao em producao vai processar todas as paginas/empenhos do fornecedor e recalcular estes numeros.",
+  "atualizadoEm": "2026-08-10T18:24:00-03:00",
+  "observacao": "Dados extraidos do relatorio de Movimentacoes de Empenhos do e-Publica (emissao 10/08/2026), contendo os 19 empenhos do fornecedor para a unidade 2006. Notas fiscais compartilhadas entre mais de um empenho (408261 e 408262) tem o valor de face total indicado no campo da nota, com o valor efetivamente aplicado a cada empenho no valor da movimentacao.",
   "empenhos": [
     {
       "numero": "202/2026",
@@ -14,17 +17,538 @@
       "classificacao": "material",
       "detalhamento": "39 - material para manutencao de veiculos",
       "fonteRecurso": "1100 - Recursos nao Vinculados de Impostos",
-      "objetoResumido": "Empenho estimativo para futura e eventual aquisicao de materiais, atraves de empresa especializada no gerenciamento da manutencao preditiva, preventiva e corretiva de veiculos automotores e equipamentos do Municipio de Cacador.",
-      "valorEmpenhado": 30000.00,
+      "objetoResumido": "Empenho estimativo para futura e eventual aquisicao de materiais, atraves de empresa especializada no gerenciamento da manutencao preditiva, preventiva e corretiva de veiculos automotores e equipamentos do Municipio de Cacador, licitacao compartilhada realizada pelo Consorcio Interfederativo Santa Catarina Cincatarina.",
+      "valorEmpenhado": 30000.0,
       "movimentacoes": [
-        { "data": "2026-01-16", "sequencia": "9297004", "tipo": "Emissao de Empenho Orcamentario", "valor": 30000.00, "notasFiscais": [] },
-        { "data": "2026-02-03", "sequencia": "9671758", "tipo": "Liquidacao de Empenho Orcamentario", "valor": 711.93, "notasFiscais": [{ "numero": "379983", "data": "2026-01-09", "valor": 711.93 }] },
-        { "data": "2026-02-06", "sequencia": "9674938", "tipo": "Liquidacao de Empenho Orcamentario", "valor": 2067.37, "notasFiscais": [{ "numero": "395845", "data": "2026-02-01", "valor": 2067.37 }] },
-        { "data": "2026-02-06", "sequencia": "9674944", "tipo": "Retencao/Consignacao de Empenho Orcamentario", "avLiquidacao": "9674938", "valor": 24.81, "notasFiscais": [{ "numero": "395845", "data": "2026-02-01", "valor": 24.81 }], "favorecido": "20042 - IRRF" },
-        { "data": "2026-04-16", "sequencia": "10155199", "tipo": "Pagamento de Empenho Orcamentario", "avLiquidacao": "9671758", "valor": 711.93, "notasFiscais": [{ "numero": "379983", "data": "2026-01-09", "valor": 711.93 }] },
-        { "data": "2026-04-16", "sequencia": "10155202", "tipo": "Pagamento de Empenho Orcamentario", "avLiquidacao": "9674938", "valor": 2042.56, "notasFiscais": [{ "numero": "395845", "data": "2026-02-01", "valor": 2042.56 }] },
-        { "data": "2026-04-30", "sequencia": "10158812", "tipo": "Liquidacao de Empenho Orcamentario", "valor": 26667.59, "notasFiscais": [{ "numero": "422996", "data": "2026-04-01", "valor": 26667.59 }] }
+        {
+          "data": "2026-01-16",
+          "sequencia": "9297004",
+          "tipo": "Emissao de Empenho Orcamentario",
+          "valor": 30000.0,
+          "notasFiscais": []
+        },
+        {
+          "data": "2026-02-03",
+          "sequencia": "9671758",
+          "tipo": "Liquidacao de Empenho Orcamentario",
+          "valor": 711.93,
+          "notasFiscais": [
+            {
+              "numero": "379983",
+              "data": "2026-01-09",
+              "valor": 711.93
+            }
+          ]
+        },
+        {
+          "data": "2026-02-06",
+          "sequencia": "9674938",
+          "tipo": "Liquidacao de Empenho Orcamentario",
+          "valor": 2067.37,
+          "notasFiscais": [
+            {
+              "numero": "395845",
+              "data": "2026-02-01",
+              "valor": 2067.37
+            }
+          ]
+        },
+        {
+          "data": "2026-04-30",
+          "sequencia": "10158812",
+          "tipo": "Liquidacao de Empenho Orcamentario",
+          "valor": 26667.59,
+          "notasFiscais": [
+            {
+              "numero": "422996",
+              "data": "2026-04-01",
+              "valor": 26667.59
+            }
+          ]
+        },
+        {
+          "data": "2026-06-18",
+          "sequencia": "10180326",
+          "tipo": "Liquidacao de Empenho Orcamentario",
+          "valor": 553.11,
+          "notasFiscais": [
+            {
+              "numero": "408262",
+              "data": "2026-03-01",
+              "valor": 15086.4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "numero": "203/2026",
+      "especie": "Estimativa",
+      "categoria": "Comum",
+      "elementoCodigo": "39",
+      "elementoNome": "Outros Servicos de Terceiros - Pessoa Juridica",
+      "classificacao": "servico",
+      "detalhamento": "19 - manutencao e conservacao de veiculos",
+      "fonteRecurso": "1100 - Recursos nao Vinculados de Impostos",
+      "objetoResumido": "Empenho estimativo para futura e eventual prestacao de servico, atraves de empresa especializada no gerenciamento da manutencao preditiva, preventiva e corretiva de veiculos automotores e equipamentos no modelo de autogestao, para uso nos veiculos automotores e equipamentos do Municipio de Cacador, licitacao compartilhada realizada pelo Consorcio Interfederativo Santa Catarina Cincatarina.",
+      "valorEmpenhado": 20000.0,
+      "movimentacoes": [
+        {
+          "data": "2026-01-16",
+          "sequencia": "9297006",
+          "tipo": "Emissao de Empenho Orcamentario",
+          "valor": 20000.0,
+          "notasFiscais": []
+        },
+        {
+          "data": "2026-02-06",
+          "sequencia": "9674945",
+          "tipo": "Liquidacao de Empenho Orcamentario",
+          "valor": 924.91,
+          "notasFiscais": [
+            {
+              "numero": "395946",
+              "data": "2026-02-01",
+              "valor": 924.91
+            }
+          ]
+        },
+        {
+          "data": "2026-04-30",
+          "sequencia": "10159030",
+          "tipo": "Liquidacao de Empenho Orcamentario",
+          "valor": 10283.97,
+          "notasFiscais": [
+            {
+              "numero": "422992",
+              "data": "2026-04-01",
+              "valor": 10283.97
+            }
+          ]
+        },
+        {
+          "data": "2026-05-12",
+          "sequencia": "10168111",
+          "tipo": "Liquidacao de Empenho Orcamentario",
+          "valor": 869.66,
+          "notasFiscais": [
+            {
+              "numero": "408261",
+              "data": "2026-05-01",
+              "valor": 3369.66
+            }
+          ]
+        },
+        {
+          "data": "2026-07-22",
+          "sequencia": "10190567",
+          "tipo": "Liquidacao de Empenho Orcamentario",
+          "valor": 229.98,
+          "notasFiscais": [
+            {
+              "numero": "464585",
+              "data": "2026-07-04",
+              "valor": 229.98
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "numero": "4400/2026",
+      "especie": "Estimativa",
+      "categoria": "Comum",
+      "elementoCodigo": "30",
+      "elementoNome": "Material de Consumo",
+      "classificacao": "material",
+      "detalhamento": "39 - material para manutencao de veiculos",
+      "fonteRecurso": "1020 - Emendas Impositivas Individuais - 2,0% da RCL",
+      "objetoResumido": "Empenho estimativo para futura e eventual aquisicao de materiais, atraves de empresa especializada no gerenciamento da manutencao preditiva, preventiva e corretiva de veiculos automotores e equipamentos do Municipio de Cacador, licitacao compartilhada realizada pelo Consorcio Interfederativo Santa Catarina Cincatarina. Destinado a Secretaria de Esporte, conforme processo administrativo/emenda parlamentar.",
+      "valorEmpenhado": 4600.0,
+      "movimentacoes": [
+        {
+          "data": "2026-04-30",
+          "sequencia": "10158737",
+          "tipo": "Emissao de Empenho Orcamentario",
+          "valor": 4600.0,
+          "notasFiscais": []
+        },
+        {
+          "data": "2026-07-22",
+          "sequencia": "10190563",
+          "tipo": "Liquidacao de Empenho Orcamentario",
+          "valor": 1332.47,
+          "notasFiscais": [
+            {
+              "numero": "464601",
+              "data": "2026-07-01",
+              "valor": 1332.47
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "numero": "4401/2026",
+      "especie": "Estimativa",
+      "categoria": "Comum",
+      "elementoCodigo": "39",
+      "elementoNome": "Outros Servicos de Terceiros - Pessoa Juridica",
+      "classificacao": "servico",
+      "detalhamento": "19 - manutencao e conservacao de veiculos",
+      "fonteRecurso": "1100 - Recursos nao Vinculados de Impostos",
+      "objetoResumido": "Empenho estimativo para futura e eventual prestacao de servico, atraves de empresa especializada no gerenciamento da manutencao preditiva, preventiva e corretiva de veiculos automotores e equipamentos no modelo de autogestao, para uso nos veiculos automotores e equipamentos do Municipio de Cacador, licitacao compartilhada realizada pelo Consorcio Interfederativo Santa Catarina Cincatarina.",
+      "valorEmpenhado": 2500.0,
+      "movimentacoes": [
+        {
+          "data": "2026-04-30",
+          "sequencia": "10158739",
+          "tipo": "Emissao de Empenho Orcamentario",
+          "valor": 2500.0,
+          "notasFiscais": []
+        },
+        {
+          "data": "2026-05-12",
+          "sequencia": "10168112",
+          "tipo": "Liquidacao de Empenho Orcamentario",
+          "valor": 2500.0,
+          "notasFiscais": [
+            {
+              "numero": "408261",
+              "data": "2026-05-01",
+              "valor": 3369.66
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "numero": "7013/2026",
+      "especie": "Estimativa",
+      "categoria": "Comum",
+      "elementoCodigo": "30",
+      "elementoNome": "Material de Consumo",
+      "classificacao": "material",
+      "detalhamento": "19 - manutencao e conservacao de veiculos",
+      "fonteRecurso": "1100 - Recursos nao Vinculados de Impostos",
+      "objetoResumido": "Empenho estimativo para futura e eventual aquisicao de materiais, atraves de empresa especializada no gerenciamento da manutencao preditiva, preventiva e corretiva de veiculos automotores e equipamentos do Municipio de Cacador, licitacao compartilhada realizada pelo Consorcio Interfederativo Santa Catarina Cincatarina.",
+      "valorEmpenhado": 14533.29,
+      "movimentacoes": [
+        {
+          "data": "2026-06-18",
+          "sequencia": "10179752",
+          "tipo": "Emissao de Empenho Orcamentario",
+          "valor": 14533.29,
+          "notasFiscais": []
+        },
+        {
+          "data": "2026-06-18",
+          "sequencia": "10180332",
+          "tipo": "Liquidacao de Empenho Orcamentario",
+          "valor": 14533.29,
+          "notasFiscais": [
+            {
+              "numero": "408262",
+              "data": "2026-03-01",
+              "valor": 15086.4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "numero": "8157/2026",
+      "especie": "Ordinario",
+      "categoria": "Comum",
+      "elementoCodigo": "30",
+      "elementoNome": "Material de Consumo",
+      "classificacao": "material",
+      "detalhamento": "37 - manutencao/reparo de veiculos",
+      "fonteRecurso": "1100 - Recursos nao Vinculados de Impostos",
+      "objetoResumido": "Empenho estimativo para futura e eventual aquisicao de materiais, atraves de empresa especializada no gerenciamento da manutencao preditiva, preventiva e corretiva de veiculos automotores e equipamentos do Municipio de Cacador, licitacao compartilhada realizada pelo Consorcio Interfederativo Santa Catarina Cincatarina.",
+      "valorEmpenhado": 2426.0,
+      "movimentacoes": [
+        {
+          "data": "2026-07-10",
+          "sequencia": "10188144",
+          "tipo": "Emissao de Empenho Orcamentario",
+          "valor": 2426.0,
+          "notasFiscais": []
+        }
+      ]
+    },
+    {
+      "numero": "8158/2026",
+      "especie": "Ordinario",
+      "categoria": "Comum",
+      "elementoCodigo": "30",
+      "elementoNome": "Material de Consumo",
+      "classificacao": "material",
+      "detalhamento": "39 - material para manutencao de veiculos",
+      "fonteRecurso": "1100 - Recursos nao Vinculados de Impostos",
+      "objetoResumido": "Empenho estimativo para futura e eventual aquisicao de materiais, atraves de empresa especializada no gerenciamento da manutencao preditiva, preventiva e corretiva de veiculos automotores e equipamentos do Municipio de Cacador, licitacao compartilhada realizada pelo Consorcio Interfederativo Santa Catarina Cincatarina.",
+      "valorEmpenhado": 889.8,
+      "movimentacoes": [
+        {
+          "data": "2026-07-10",
+          "sequencia": "10188146",
+          "tipo": "Emissao de Empenho Orcamentario",
+          "valor": 889.8,
+          "notasFiscais": []
+        }
+      ]
+    },
+    {
+      "numero": "8160/2026",
+      "especie": "Ordinario",
+      "categoria": "Comum",
+      "elementoCodigo": "39",
+      "elementoNome": "Outros Servicos de Terceiros - Pessoa Juridica",
+      "classificacao": "servico",
+      "detalhamento": "19 - manutencao e conservacao de veiculos",
+      "fonteRecurso": "1100 - Recursos nao Vinculados de Impostos",
+      "objetoResumido": "Empenho estimativo para futura e eventual prestacao de servico, atraves de empresa especializada no gerenciamento da manutencao preditiva, preventiva e corretiva de veiculos automotores e equipamentos no modelo de autogestao, para uso nos veiculos automotores e equipamentos do Municipio de Cacador, licitacao compartilhada realizada pelo Consorcio Interfederativo Santa Catarina Cincatarina.",
+      "valorEmpenhado": 1390.0,
+      "movimentacoes": [
+        {
+          "data": "2026-07-10",
+          "sequencia": "10188151",
+          "tipo": "Emissao de Empenho Orcamentario",
+          "valor": 1390.0,
+          "notasFiscais": []
+        }
+      ]
+    },
+    {
+      "numero": "8161/2026",
+      "especie": "Ordinario",
+      "categoria": "Comum",
+      "elementoCodigo": "39",
+      "elementoNome": "Outros Servicos de Terceiros - Pessoa Juridica",
+      "classificacao": "servico",
+      "detalhamento": "19 - manutencao e conservacao de veiculos",
+      "fonteRecurso": "1100 - Recursos nao Vinculados de Impostos",
+      "objetoResumido": "Empenho estimativo para futura e eventual prestacao de servico, atraves de empresa especializada no gerenciamento da manutencao preditiva, preventiva e corretiva de veiculos automotores e equipamentos no modelo de autogestao, para uso nos veiculos automotores e equipamentos do Municipio de Cacador, licitacao compartilhada realizada pelo Consorcio Interfederativo Santa Catarina Cincatarina.",
+      "valorEmpenhado": 3537.45,
+      "movimentacoes": [
+        {
+          "data": "2026-07-10",
+          "sequencia": "10188152",
+          "tipo": "Emissao de Empenho Orcamentario",
+          "valor": 3537.45,
+          "notasFiscais": []
+        }
+      ]
+    },
+    {
+      "numero": "8223/2026",
+      "especie": "Estimativa",
+      "categoria": "Comum",
+      "elementoCodigo": "30",
+      "elementoNome": "Material de Consumo",
+      "classificacao": "material",
+      "detalhamento": "37 - manutencao/reparo de veiculos",
+      "fonteRecurso": "1100 - Recursos nao Vinculados de Impostos",
+      "objetoResumido": "Empenho estimativo para futura e eventual aquisicao de materiais, atraves de empresa especializada no gerenciamento da manutencao preditiva, preventiva e corretiva de veiculos automotores e equipamentos do Municipio de Cacador, licitacao compartilhada realizada pelo Consorcio Interfederativo Santa Catarina Cincatarina.",
+      "valorEmpenhado": 3758.74,
+      "movimentacoes": [
+        {
+          "data": "2026-07-14",
+          "sequencia": "10188729",
+          "tipo": "Emissao de Empenho Orcamentario",
+          "valor": 3758.74,
+          "notasFiscais": []
+        }
+      ]
+    },
+    {
+      "numero": "8224/2026",
+      "especie": "Estimativa",
+      "categoria": "Comum",
+      "elementoCodigo": "30",
+      "elementoNome": "Material de Consumo",
+      "classificacao": "material",
+      "detalhamento": "39 - material para manutencao de veiculos",
+      "fonteRecurso": "1020 - Emendas Impositivas Individuais - 2,0% da RCL",
+      "objetoResumido": "Empenho estimativo para futura e eventual aquisicao de materiais, atraves de empresa especializada no gerenciamento da manutencao preditiva, preventiva e corretiva de veiculos automotores e equipamentos do Municipio de Cacador, licitacao compartilhada realizada pelo Consorcio Interfederativo Santa Catarina Cincatarina. Destinado a Secretaria de Esporte, conforme processo administrativo/emenda parlamentar.",
+      "valorEmpenhado": 610.0,
+      "movimentacoes": [
+        {
+          "data": "2026-07-14",
+          "sequencia": "10188733",
+          "tipo": "Emissao de Empenho Orcamentario",
+          "valor": 610.0,
+          "notasFiscais": []
+        }
+      ]
+    },
+    {
+      "numero": "8225/2026",
+      "especie": "Estimativa",
+      "categoria": "Comum",
+      "elementoCodigo": "30",
+      "elementoNome": "Material de Consumo",
+      "classificacao": "material",
+      "detalhamento": "39 - material para manutencao de veiculos",
+      "fonteRecurso": "1020 - Emendas Impositivas Individuais - 2,0% da RCL",
+      "objetoResumido": "Empenho estimativo para futura e eventual aquisicao de materiais, atraves de empresa especializada no gerenciamento da manutencao preditiva, preventiva e corretiva de veiculos automotores e equipamentos do Municipio de Cacador, licitacao compartilhada realizada pelo Consorcio Interfederativo Santa Catarina Cincatarina. Destinado a Secretaria de Esporte, conforme processo administrativo/emenda parlamentar.",
+      "valorEmpenhado": 2800.0,
+      "movimentacoes": [
+        {
+          "data": "2026-07-14",
+          "sequencia": "10188735",
+          "tipo": "Emissao de Empenho Orcamentario",
+          "valor": 2800.0,
+          "notasFiscais": []
+        }
+      ]
+    },
+    {
+      "numero": "8226/2026",
+      "especie": "Estimativa",
+      "categoria": "Comum",
+      "elementoCodigo": "30",
+      "elementoNome": "Material de Consumo",
+      "classificacao": "material",
+      "detalhamento": "39 - material para manutencao de veiculos",
+      "fonteRecurso": "1020 - Emendas Impositivas Individuais - 2,0% da RCL",
+      "objetoResumido": "Empenho estimativo para futura e eventual aquisicao de materiais, atraves de empresa especializada no gerenciamento da manutencao preditiva, preventiva e corretiva de veiculos automotores e equipamentos do Municipio de Cacador, licitacao compartilhada realizada pelo Consorcio Interfederativo Santa Catarina Cincatarina. Destinado a Secretaria de Esporte, conforme processo administrativo/emenda parlamentar. (Emenda 10808/2026).",
+      "valorEmpenhado": 891.63,
+      "movimentacoes": [
+        {
+          "data": "2026-07-14",
+          "sequencia": "10188740",
+          "tipo": "Emissao de Empenho Orcamentario",
+          "valor": 891.63,
+          "notasFiscais": []
+        }
+      ]
+    },
+    {
+      "numero": "8227/2026",
+      "especie": "Estimativa",
+      "categoria": "Comum",
+      "elementoCodigo": "30",
+      "elementoNome": "Material de Consumo",
+      "classificacao": "material",
+      "detalhamento": "39 - material para manutencao de veiculos",
+      "fonteRecurso": "1010 - Emendas Impositivas de Bancadas - 1,0% da RCL",
+      "objetoResumido": "Empenho estimativo para futura e eventual aquisicao de materiais, atraves de empresa especializada no gerenciamento da manutencao preditiva, preventiva e corretiva de veiculos automotores e equipamentos do Municipio de Cacador, licitacao compartilhada realizada pelo Consorcio Interfederativo Santa Catarina Cincatarina. Destinado a Secretaria de Esporte, conforme processo administrativo/emenda parlamentar. (Emenda 20111/2026).",
+      "valorEmpenhado": 10000.0,
+      "movimentacoes": [
+        {
+          "data": "2026-07-14",
+          "sequencia": "10188742",
+          "tipo": "Emissao de Empenho Orcamentario",
+          "valor": 10000.0,
+          "notasFiscais": []
+        }
+      ]
+    },
+    {
+      "numero": "8228/2026",
+      "especie": "Estimativa",
+      "categoria": "Comum",
+      "elementoCodigo": "30",
+      "elementoNome": "Material de Consumo",
+      "classificacao": "material",
+      "detalhamento": "39 - material para manutencao de veiculos",
+      "fonteRecurso": "1010 - Emendas Impositivas de Bancadas - 1,0% da RCL",
+      "objetoResumido": "Empenho estimativo para futura e eventual aquisicao de materiais, atraves de empresa especializada no gerenciamento da manutencao preditiva, preventiva e corretiva de veiculos automotores e equipamentos do Municipio de Cacador, licitacao compartilhada realizada pelo Consorcio Interfederativo Santa Catarina Cincatarina. Destinado a Secretaria de Esporte, conforme processo administrativo/emenda parlamentar.",
+      "valorEmpenhado": 5000.0,
+      "movimentacoes": [
+        {
+          "data": "2026-07-14",
+          "sequencia": "10188745",
+          "tipo": "Emissao de Empenho Orcamentario",
+          "valor": 5000.0,
+          "notasFiscais": []
+        }
+      ]
+    },
+    {
+      "numero": "8229/2026",
+      "especie": "Estimativa",
+      "categoria": "Comum",
+      "elementoCodigo": "30",
+      "elementoNome": "Material de Consumo",
+      "classificacao": "material",
+      "detalhamento": "39 - material para manutencao de veiculos",
+      "fonteRecurso": "1010 - Emendas Impositivas de Bancadas - 1,0% da RCL",
+      "objetoResumido": "Empenho estimativo para futura e eventual aquisicao de materiais, atraves de empresa especializada no gerenciamento da manutencao preditiva, preventiva e corretiva de veiculos automotores e equipamentos do Municipio de Cacador, licitacao compartilhada realizada pelo Consorcio Interfederativo Santa Catarina Cincatarina. Destinado a Secretaria de Esporte, conforme processo administrativo/emenda parlamentar.",
+      "valorEmpenhado": 7698.37,
+      "movimentacoes": [
+        {
+          "data": "2026-07-14",
+          "sequencia": "10188748",
+          "tipo": "Emissao de Empenho Orcamentario",
+          "valor": 7698.37,
+          "notasFiscais": []
+        }
+      ]
+    },
+    {
+      "numero": "8230/2026",
+      "especie": "Estimativa",
+      "categoria": "Comum",
+      "elementoCodigo": "39",
+      "elementoNome": "Outros Servicos de Terceiros - Pessoa Juridica",
+      "classificacao": "servico",
+      "detalhamento": "19 - manutencao e conservacao de veiculos",
+      "fonteRecurso": "1100 - Recursos nao Vinculados de Impostos",
+      "objetoResumido": "Empenho estimativo para futura e eventual prestacao de servico, atraves de empresa especializada no gerenciamento da manutencao preditiva, preventiva e corretiva de veiculos automotores e equipamentos no modelo de autogestao, para uso nos veiculos automotores e equipamentos do Municipio de Cacador, licitacao compartilhada realizada pelo Consorcio Interfederativo Santa Catarina Cincatarina.",
+      "valorEmpenhado": 7980.0,
+      "movimentacoes": [
+        {
+          "data": "2026-07-14",
+          "sequencia": "10188752",
+          "tipo": "Emissao de Empenho Orcamentario",
+          "valor": 7980.0,
+          "notasFiscais": []
+        }
+      ]
+    },
+    {
+      "numero": "8267/2026",
+      "especie": "Estimativa",
+      "categoria": "Comum",
+      "elementoCodigo": "39",
+      "elementoNome": "Outros Servicos de Terceiros - Pessoa Juridica",
+      "classificacao": "servico",
+      "detalhamento": "19 - manutencao e conservacao de veiculos",
+      "fonteRecurso": "1100 - Recursos nao Vinculados de Impostos",
+      "objetoResumido": "Empenho estimativo para futura e eventual prestacao de servico, atraves de empresa especializada no gerenciamento da manutencao preditiva, preventiva e corretiva de veiculos automotores e equipamentos no modelo de autogestao, para uso nos veiculos automotores e equipamentos do Municipio de Cacador, licitacao compartilhada realizada pelo Consorcio Interfederativo Santa Catarina Cincatarina.",
+      "valorEmpenhado": 900.0,
+      "movimentacoes": [
+        {
+          "data": "2026-07-15",
+          "sequencia": "10189075",
+          "tipo": "Emissao de Empenho Orcamentario",
+          "valor": 900.0,
+          "notasFiscais": []
+        }
+      ]
+    },
+    {
+      "numero": "8268/2026",
+      "especie": "Ordinario",
+      "categoria": "Comum",
+      "elementoCodigo": "30",
+      "elementoNome": "Material de Consumo",
+      "classificacao": "material",
+      "detalhamento": "37 - manutencao/reparo de veiculos",
+      "fonteRecurso": "1100 - Recursos nao Vinculados de Impostos",
+      "objetoResumido": "Empenho estimativo para futura e eventual aquisicao de materiais, atraves de empresa especializada no gerenciamento da manutencao preditiva, preventiva e corretiva de veiculos automotores e equipamentos do Municipio de Cacador, licitacao compartilhada realizada pelo Consorcio Interfederativo Santa Catarina Cincatarina.",
+      "valorEmpenhado": 2207.26,
+      "movimentacoes": [
+        {
+          "data": "2026-07-15",
+          "sequencia": "10189076",
+          "tipo": "Emissao de Empenho Orcamentario",
+          "valor": 2207.26,
+          "notasFiscais": []
+        }
       ]
     }
   ]
-}
+            }
