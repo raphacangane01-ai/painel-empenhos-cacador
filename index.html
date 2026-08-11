@@ -23,32 +23,23 @@
   header {
     background: var(--azul);
     color: white;
-    padding: 20px 16px;
+    padding: 20px 16px 0;
   }
   header h1 { margin: 0 0 4px; font-size: 1.25rem; }
   header p { margin: 2px 0; font-size: 0.85rem; opacity: 0.9; }
-  .tabs {
-    display: flex;
-    gap: 4px;
-    margin-top: 14px;
-  }
+  .container { max-width: 1000px; margin: 0 auto; padding: 16px; }
+  .tabs { display: flex; gap: 4px; margin-top: 16px; }
   .tab-btn {
     background: rgba(255,255,255,0.12);
-    border: none;
     color: white;
-    padding: 8px 16px;
+    border: none;
+    padding: 10px 18px;
     border-radius: 8px 8px 0 0;
     font-size: 0.85rem;
     font-weight: 600;
     cursor: pointer;
-    opacity: 0.75;
   }
-  .tab-btn.ativa {
-    background: #f4f6f8;
-    color: var(--azul);
-    opacity: 1;
-  }
-  .container { max-width: 1000px; margin: 0 auto; padding: 16px; }
+  .tab-btn.ativa { background: #f4f6f8; color: var(--azul); }
   .aba { display: none; }
   .aba.ativa { display: block; }
   .aviso {
@@ -76,7 +67,7 @@
   .card .valor { font-size: 1.15rem; font-weight: 700; margin-top: 4px; }
   .card.material { border-top: 3px solid var(--azul); }
   .card.servico { border-top: 3px solid var(--laranja); }
-  .card.total { border-top: 3px solid var(--verde); }
+  .card.veiculo { border-top: 3px solid var(--verde); }
   .secao-titulo {
     font-size: 0.95rem;
     font-weight: 700;
@@ -123,6 +114,14 @@
     padding: 3px 8px;
     font-size: 0.72rem;
   }
+  .pendente-item {
+    background: white;
+    border: 1px solid #fecaca;
+    border-radius: 10px;
+    padding: 12px 14px;
+    margin-bottom: 10px;
+    font-size: 0.82rem;
+  }
   footer { text-align: center; padding: 20px; font-size: 0.72rem; color: var(--cinza); }
   .seta { transition: transform 0.15s; }
   .empenho.aberto .seta, .veiculo.aberto .seta { transform: rotate(180deg); }
@@ -134,8 +133,8 @@
   <p id="subtitulo"></p>
   <p id="atualizado"></p>
   <div class="tabs">
-    <button class="tab-btn ativa" id="btn-tab-empenhos" onclick="mudarAba('empenhos')">Empenhos</button>
-    <button class="tab-btn" id="btn-tab-veiculos" onclick="mudarAba('veiculos')">Veiculos</button>
+    <button class="tab-btn ativa" id="tab-empenhos" onclick="mudarAba('empenhos')">Empenhos</button>
+    <button class="tab-btn" id="tab-veiculos" onclick="mudarAba('veiculos')">Veiculos</button>
   </div>
 </header>
 
@@ -146,23 +145,20 @@
     <div class="cards" id="cards"></div>
     <div class="secao-titulo">Empenhos e notas fiscais</div>
     <div id="lista-empenhos"></div>
-    <footer>
-      Saldo empenhado = soma das emissoes de empenho. Saldo gasto = soma das liquidacoes. Saldo disponivel = empenhado - gasto - anulado.
-    </footer>
   </div>
 
   <div class="aba" id="aba-veiculos">
-    <div class="aviso" id="aviso-veiculos" style="display:none;"></div>
+    <div class="aviso" id="aviso-pendentes" style="display:none;"></div>
     <div class="cards" id="cards-veiculos"></div>
     <div class="secao-titulo">Gasto por veiculo (Maxifrota)</div>
     <div id="lista-veiculos"></div>
-    <div class="secao-titulo" id="titulo-pendentes" style="display:none;">Notas sem veiculo identificado</div>
+    <div class="secao-titulo" id="titulo-pendentes" style="display:none;">Notas fiscais sem veiculo identificado</div>
     <div id="lista-pendentes"></div>
-    <footer>
-      Dados alimentados manualmente a partir das notas fiscais enviadas. Envie novas notas semanalmente para manter atualizado.
-    </footer>
   </div>
 
+  <footer>
+    Saldo empenhado = soma das emissoes de empenho. Saldo gasto = soma das liquidacoes. Saldo disponivel = empenhado - gasto - anulado.
+  </footer>
 </div>
 
 <script>
@@ -170,11 +166,8 @@ function moeda(v) {
   return v.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
 }
 
-function mudarAba(nome) {
-  document.getElementById('aba-empenhos').classList.toggle('ativa', nome === 'empenhos');
-  document.getElementById('aba-veiculos').classList.toggle('ativa', nome === 'veiculos');
-  document.getElementById('btn-tab-empenhos').classList.toggle('ativa', nome === 'empenhos');
-  document.getElementById('btn-tab-veiculos').classList.toggle('ativa', nome === 'veiculos');
+function dataBr(iso) {
+  return new Date(iso + 'T00:00:00').toLocaleDateString('pt-BR');
 }
 
 function classificar(elementoCodigo, elementoNome) {
@@ -182,6 +175,13 @@ function classificar(elementoCodigo, elementoNome) {
   if (nome.includes('material')) return 'material';
   if (nome.includes('servi')) return 'servico';
   return 'outro';
+}
+
+function mudarAba(nome) {
+  document.getElementById('aba-empenhos').classList.toggle('ativa', nome === 'empenhos');
+  document.getElementById('aba-veiculos').classList.toggle('ativa', nome === 'veiculos');
+  document.getElementById('tab-empenhos').classList.toggle('ativa', nome === 'empenhos');
+  document.getElementById('tab-veiculos').classList.toggle('ativa', nome === 'veiculos');
 }
 
 fetch('./data.json')
@@ -238,13 +238,13 @@ fetch('./data.json')
         '<div><strong>Objeto:</strong> ' + (emp.objetoResumido || '-') + '</div>' +
         '<table><thead><tr><th>Data</th><th>Tipo</th><th>Valor</th></tr></thead><tbody>' +
         emp.movimentacoes.map(function(m) {
-          return '<tr><td>' + new Date(m.data+'T00:00:00').toLocaleDateString('pt-BR') + '</td><td>' + m.tipo + '</td><td>' + moeda(m.valor) + '</td></tr>';
+          return '<tr><td>' + dataBr(m.data) + '</td><td>' + m.tipo + '</td><td>' + moeda(m.valor) + '</td></tr>';
         }).join('') +
         '</tbody></table>' +
         '<div style="margin-top:8px;"><strong>Notas fiscais vinculadas:</strong></div>' +
         '<div class="nf-lista">' +
         ([...notas.values()].map(function(nf) {
-          return '<span class="nf-chip">NF ' + nf.numero + ' - ' + new Date(nf.data+'T00:00:00').toLocaleDateString('pt-BR') + ' - ' + moeda(nf.valor) + '</span>';
+          return '<span class="nf-chip">NF ' + nf.numero + ' - ' + dataBr(nf.data) + ' - ' + moeda(nf.valor) + '</span>';
         }).join('') || '<span class="nf-chip">Nenhuma</span>') +
         '</div></div>';
 
@@ -272,45 +272,51 @@ fetch('./data.json')
 
 fetch('./veiculos.json')
   .then(r => r.json())
-  .then(dv => {
-    const cardsV = document.getElementById('cards-veiculos');
-    cardsV.innerHTML =
-      '<div class="card total"><div class="label">Total gasto (todos os veiculos)</div><div class="valor">' + moeda(dv.totalGeral) + '</div></div>' +
-      '<div class="card total"><div class="label">Veiculos com registro</div><div class="valor">' + dv.veiculos.length + '</div></div>';
+  .then(dados => {
+    const cardsEl = document.getElementById('cards-veiculos');
+    cardsEl.innerHTML =
+      '<div class="card veiculo"><div class="label">Total gasto (todos os veiculos)</div><div class="valor">' + moeda(dados.totalGeral) + '</div></div>' +
+      '<div class="card veiculo"><div class="label">Veiculos com registro</div><div class="valor">' + dados.veiculos.length + '</div></div>';
 
-    const listaV = document.getElementById('lista-veiculos');
-    dv.veiculos.forEach(function(v) {
-      const div = document.createElement('div');
-      div.className = 'veiculo';
-      div.innerHTML =
-        '<div class="veiculo-cab" onclick="this.parentElement.classList.toggle(&quot;aberto&quot;)">' +
-        '<div><div class="titulo">Placa ' + v.placa + '</div>' +
-        '<div class="veiculo-resumo">' + v.qtdServicos + ' servico(s) - Total gasto ' + moeda(v.totalGasto) + '</div></div>' +
-        '<span class="seta">v</span></div>' +
-        '<div class="veiculo-corpo">' +
-        '<table><thead><tr><th>Data</th><th>Oficina</th><th>Servico</th><th>Valor</th></tr></thead><tbody>' +
-        v.servicos.map(function(s) {
-          return '<tr><td>' + new Date(s.data+'T00:00:00').toLocaleDateString('pt-BR') + '</td><td>' + (s.oficina || '-') + '</td><td>' + s.descricao + '</td><td>' + moeda(s.valor) + '</td></tr>';
-        }).join('') +
-        '</tbody></table></div>';
-      listaV.appendChild(div);
-    });
-
-    if (dv.semVeiculo && dv.semVeiculo.length) {
-      document.getElementById('titulo-pendentes').style.display = 'block';
-      const av = document.getElementById('aviso-veiculos');
-      av.style.display = 'block';
-      av.textContent = dv.semVeiculo.length + ' nota(s) fiscal(is) ainda sem veiculo identificado, aguardando confirmacao.';
-      const listaP = document.getElementById('lista-pendentes');
-      dv.semVeiculo.forEach(function(s) {
+    const listaEl = document.getElementById('lista-veiculos');
+    dados.veiculos
+      .slice()
+      .sort(function(a, b) { return b.totalGasto - a.totalGasto; })
+      .forEach(function(v) {
         const div = document.createElement('div');
         div.className = 'veiculo';
         div.innerHTML =
-          '<div class="veiculo-cab">' +
-          '<div><div class="titulo">Pendente <span class="tag pendente">Sem placa</span></div>' +
-          '<div class="veiculo-resumo">' + new Date(s.data+'T00:00:00').toLocaleDateString('pt-BR') + ' - ' + (s.oficina || '-') + ' - ' + moeda(s.valor) + '</div></div></div>' +
-          '<div class="veiculo-corpo" style="display:block;"><div>' + s.descricao + '</div></div>';
-        listaP.appendChild(div);
+          '<div class="veiculo-cab" onclick="this.parentElement.classList.toggle(&quot;aberto&quot;)">' +
+          '<div><div class="titulo">Placa ' + v.placa + '</div>' +
+          '<div class="veiculo-resumo">' + v.qtdServicos + ' servico(s) - Total gasto ' + moeda(v.totalGasto) + '</div></div>' +
+          '<span class="seta">v</span></div>' +
+          '<div class="veiculo-corpo">' +
+          '<table><thead><tr><th>Data</th><th>Oficina</th><th>NF</th><th>Servico</th><th>Valor</th></tr></thead><tbody>' +
+          v.servicos.map(function(s) {
+            const nfExibida = s.grupo && /^\d+$/.test(s.grupo) ? s.grupo : '-';
+            return '<tr><td>' + dataBr(s.data) + '</td><td>' + (s.oficina || '-') + '</td><td>' + nfExibida + '</td><td>' + s.descricao + '</td><td>' + moeda(s.valor) + '</td></tr>';
+          }).join('') +
+          '</tbody></table></div>';
+        listaEl.appendChild(div);
+      });
+
+    if (dados.semVeiculo && dados.semVeiculo.length) {
+      const av = document.getElementById('aviso-pendentes');
+      av.style.display = 'block';
+      av.textContent = dados.semVeiculo.length + ' nota(s) fiscal(is) ainda sem veiculo identificado, aguardando confirmacao.';
+
+      document.getElementById('titulo-pendentes').style.display = 'block';
+      const pendEl = document.getElementById('lista-pendentes');
+      dados.semVeiculo.forEach(function(p) {
+        const nfExibida = p.grupo && /^\d+$/.test(p.grupo) ? p.grupo : '-';
+        const div = document.createElement('div');
+        div.className = 'pendente-item';
+        div.innerHTML =
+          '<span class="tag pendente">Pendente</span> ' +
+          '<strong>NF ' + nfExibida + '</strong> - ' + dataBr(p.data) + ' - ' + moeda(p.valor) +
+          (p.oficina ? ' - ' + p.oficina : '') +
+          '<div style="margin-top:4px; color:var(--cinza);">' + p.descricao + '</div>';
+        pendEl.appendChild(div);
       });
     }
   })
