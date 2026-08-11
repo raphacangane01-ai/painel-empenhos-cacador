@@ -2,231 +2,443 @@
  "veiculos": [
   {
    "placa": "RXR1H38",
-   "totalGasto": 19431.72,
-   "qtdServicos": 4,
    "servicos": [
     {
      "data": "2026-02-10",
      "oficina": "AUTO COLETIVO CACADOR LTDA",
-     "descricao": "MAO DE OBRA BORRACHARIA / REMOVER DESMONTAR E MONTAR PNEUS TRASEIROS|MAO DE OBRA FUNILARIA / REMOVER AJUSTAR E TR. PARABRISA",
-     "valor": 11777.72,
-     "grupo": "903024"
+     "grupo": "903024",
+     "tipo": "produto",
+     "valor": 11767.52,
+     "descricao": "ADESIVO PARABRISA POLIUR; FITA CREPE 18X40 AMARELA; PARABRISA MPOLO VOLARE C; PNEU 215/75 R16C (4un)",
+     "itens": [
+      { "descricao": "ADESIVO PARABRISA POLIUR", "valor": 269.85 },
+      { "descricao": "FITA CREPE 18X40 AMARELA", "valor": 14.11 },
+      { "descricao": "PARABRISA MPOLO VOLARE C", "valor": 6900.0 },
+      { "descricao": "PNEU 215/75 R16C (4un)", "valor": 4583.56 }
+     ]
+    },
+    {
+     "data": "2026-02-10",
+     "oficina": "AUTO COLETIVO CACADOR LTDA",
+     "grupo": "903024",
+     "tipo": "servico",
+     "valor": 850.0,
+     "descricao": "MAO DE OBRA BORRACHARIA / REMOVER DESMONTAR E MONTAR PNEUS TRASEIROS; MAO DE OBRA FUNILARIA / REMOVER AJUSTAR E TR. PARABRISA"
     },
     {
      "data": "2026-03-30",
      "oficina": "23.903.858 LEANDRO DANILO CHIARELLO",
-     "descricao": "SERVIÇOS DE PINTURA E MONTAGEM ORCAMENTO 1097487 RECUPERAÇÃO/TROCA DE PEÇAS REF. MICROONIBUS MARCOPOLO MPOLO VOLARE CINCO EXECUTIVO (DIESEL)(E5) ANO 2021/2021 PLACA RXR-1H38",
-     "valor": 7100.0,
-     "grupo": "1009915"
+     "grupo": "1009915",
+     "tipo": "produto",
+     "valor": 4600.0,
+     "descricao": "FAROL DIANTEIRO ESQUERDO; COMPLEMENTO PARACHOQUE TRASEIRO; GRADE DIANTEIRA ESQUERDA; PINO BATENTE CENTRAL DO CAPO",
+     "itens": [
+      { "descricao": "FAROL DIANTEIRO ESQUERDO", "valor": 1650.0 },
+      { "descricao": "COMPLEMENTO PARACHOQUE TRASEIRO", "valor": 2050.0 },
+      { "descricao": "GRADE DIANTEIRA ESQUERDA", "valor": 650.0 },
+      { "descricao": "PINO BATENTE CENTRAL DO CAPO", "valor": 250.0 }
+     ]
+    },
+    {
+     "data": "2026-03-30",
+     "oficina": "23.903.858 LEANDRO DANILO CHIARELLO",
+     "grupo": "1009915",
+     "tipo": "servico",
+     "valor": 2500.0,
+     "descricao": "SERVICOS DE PINTURA E MONTAGEM - ORCAMENTO 1097487 - RECUPERACAO/TROCA DE PECAS - MICROONIBUS MARCOPOLO VOLARE CINCO EXECUTIVO"
     },
     {
      "data": "2026-05-13",
      "oficina": "RECUPERADORA DE PNEUS RIO DO PEIXE LTDA",
-     "descricao": "TROCA DE PNEU DE MICRO ÔNIBUS",
-     "valor": 54.0,
-     "grupo": "1012424"
+     "grupo": "1012424",
+     "tipo": "servico",
+     "valor": 27.0,
+     "descricao": "TROCA DE PNEU DE MICRO ONIBUS"
+    },
+    {
+     "data": "2026-05-13",
+     "oficina": "RECUPERADORA DE PNEUS RIO DO PEIXE LTDA",
+     "grupo": "1012424",
+     "tipo": "produto",
+     "valor": 27.0,
+     "descricao": "VALVULA DE PNEU S/ CAMARA FINA CURTA",
+     "itens": [ { "descricao": "VALVULA DE PNEU S/ CAMARA FINA CURTA", "valor": 27.0 } ]
     },
     {
      "data": "2026-07-07",
-     "oficina": "",
-     "descricao": "SERVIÇO DE INSPEÇÃO VEICULAR - LAUDO SIE - VEÍCULO PLACAS: RXR1H38",
-     "valor": 500.0,
-     "grupo": "1047768"
-    }
-   ]
-  },
-  {
-   "placa": "RAG9A13",
-   "totalGasto": 9017.02,
-   "qtdServicos": 8,
-   "servicos": [
-    {
-     "data": "2025-11-17",
-     "oficina": "GROCH FUNILARIA E PINTURA",
-     "descricao": "REPARO E PINTURA PARACHOQUE TRASEIRO",
-     "valor": 2000.0,
-     "grupo": "810871"
-    },
-    {
-     "data": "2026-02-16",
-     "oficina": "BONATTO AUTOPEÇAS LTDA - EPP",
-     "descricao": "(sem descrição detalhada na NF)",
-     "valor": 236.6,
-     "grupo": "902523"
-    },
-    {
-     "data": "2026-03-03",
      "oficina": "INSPECAMPOS INSPECAO VEICULAR LTDA",
-     "descricao": "SERVIÇO DE INSPEÇÃO VEICULAR - LAUDO SIE",
+     "grupo": "1047768",
+     "tipo": "servico",
      "valor": 500.0,
-     "grupo": "inspecampos-0303"
-    },
-    {
-     "data": "2026-03-12",
-     "oficina": "RONALDO CERRY",
-     "descricao": "REPARO ELÉTRICO/MECÂNICO SISTEMA CADEIRANTE/EQUIPAMENTO DE ACESSIBILIDADE",
-     "valor": 600.0,
-     "grupo": "cerry-0312"
-    },
-    {
-     "data": "2026-03-19",
-     "oficina": "TECNICAR CENTRO AUTOMOTIVO LTDA",
-     "descricao": "peças (radiador, reservatório, tampa, aditivo) + mão de obra - ref. OS 1888",
-     "valor": 1660.0,
-     "grupo": "tecnicar-1903"
-    },
-    {
-     "data": "2026-06-26",
-     "oficina": "AUTO COLETIVO CACADOR LTDA",
-     "descricao": "MAO DE OBRA MECANICA / REMOVER AJUSTAR E TR. BARRA DIRECAO CURTA",
-     "valor": 891.96,
-     "grupo": "1031857"
-    },
-    {
-     "data": "2026-06-26",
-     "oficina": "PNEU MAIS LTDA",
-     "descricao": "CONSERTO DE PNEU -................................ QTDE.: R$ 1,00 VL UN.: R$ 50,00 VL TOT.: R$ 50,00",
-     "valor": 50.0,
-     "grupo": "1022928"
-    },
-    {
-     "data": "2026-07-16",
-     "oficina": "AUTO COLETIVO CACADOR LTDA",
-     "descricao": "MAO DE OBRA ELETRICA / TESTAR AJUSTAR E TR. CHAVE DIRECIONAL VOLARE / SUBSTITUIDO FUSIVEIS QUEIMADOS / TROCADO INTERRUPTOR PISCA ALERTA / SUBSTITUIDO SOQUETES E LAMPADAS QUEIMADAS / TROCADO MOTOR LIMPADOR PARABRISA (EM CURTO CIRCUITO) / COMPLETADO ADITIVO E AGUA DESMINERALIZADA / TR. LANTERNA DIRECIONAL LATERAL L. E",
-     "valor": 3078.46,
-     "grupo": "1050129"
+     "descricao": "SERVICO DE INSPECAO VEICULAR - LAUDO SIE - VEICULO PLACAS: RXR1H38"
     }
-   ]
+   ],
+   "totalGasto": 20271.52,
+   "qtdServicos": 7
   },
   {
    "placa": "QIJ1629",
-   "totalGasto": 4334.0,
-   "qtdServicos": 3,
    "servicos": [
     {
      "data": "2026-04-01",
      "oficina": "PRECISAO AUTO SERVICE LTDA",
-     "descricao": "(sem descrição detalhada na NF)",
-     "valor": 2115.0,
-     "grupo": "996723"
+     "grupo": "996723",
+     "tipo": "produto",
+     "valor": 1585.0,
+     "descricao": "KIT EMBREAGEM E ATUADOR; CILINDRO MESTRE EMBREAGEM (PEDAL); OLEO DE CAIXA 75W90",
+     "itens": [
+      { "descricao": "KIT EMBREAGEM E ATUADOR", "valor": 1090.0 },
+      { "descricao": "CILINDRO MESTRE EMBREAGEM (PEDAL)", "valor": 410.0 },
+      { "descricao": "OLEO DE CAIXA 75W90", "valor": 85.0 }
+     ]
+    },
+    {
+     "data": "2026-04-01",
+     "oficina": "PRECISAO AUTO SERVICE LTDA",
+     "grupo": "996723",
+     "tipo": "servico",
+     "valor": 530.0,
+     "descricao": "SERVICO"
     },
     {
      "data": "2026-05-07",
      "oficina": "PRECISAO AUTO SERVICE LTDA",
-     "descricao": "(sem descrição detalhada na NF)",
-     "valor": 395.0,
-     "grupo": "1009994"
+     "grupo": "1009994",
+     "tipo": "produto",
+     "valor": 265.0,
+     "descricao": "PASTILHAS FR DIANT",
+     "itens": [ { "descricao": "PASTILHAS FR DIANT", "valor": 265.0 } ]
+    },
+    {
+     "data": "2026-05-07",
+     "oficina": "PRECISAO AUTO SERVICE LTDA",
+     "grupo": "1009994",
+     "tipo": "servico",
+     "valor": 130.0,
+     "descricao": "SERVICO"
     },
     {
      "data": "2026-07-17",
      "oficina": "GRID CENTRO AUTOMOTIVO LTDA",
-     "descricao": "(sem descrição detalhada na NF)",
-     "valor": 1824.0,
-     "grupo": "1049380"
+     "grupo": "1049380",
+     "tipo": "produto",
+     "valor": 924.0,
+     "descricao": "SOLUCAO ARREF ORG 33% ROSADA (4L); RADIADOR AR QUENTE PRISMA SPIN C; ABRACADEIRA SEM FIM ZNB (4un); PRODUTO (item diverso)",
+     "itens": [
+      { "descricao": "SOLUCAO ARREF ORG 33% ROSADA (4L)", "valor": 180.0 },
+      { "descricao": "RADIADOR AR QUENTE PRISMA SPIN C", "valor": 470.0 },
+      { "descricao": "ABRACADEIRA SEM FIM ZNB (4un)", "valor": 24.0 },
+      { "descricao": "PRODUTO (item diverso)", "valor": 250.0 }
+     ]
+    },
+    {
+     "data": "2026-07-17",
+     "oficina": "GRID CENTRO AUTOMOTIVO LTDA",
+     "grupo": "1049380",
+     "tipo": "servico",
+     "valor": 900.0,
+     "descricao": "MONTAGEM DE PNEU (4un); BALANCEAMENTO E GEOMETRIA 3D; HORA TECNICA CARRO PEQUENO (4h)"
+    },
+    {
+     "data": "2026-04-29",
+     "oficina": "TECNICAR CENTRO AUTOMOTIVO LTDA",
+     "grupo": "1007369",
+     "tipo": "produto",
+     "valor": 7470.0,
+     "descricao": "BIELETA; DISCO FR DIAN; DISCO TRASEIRO; PASTILHA DE FREIO DIANTEIRA; PASTILHA TRASEIRA; EMBREAGEM; CARTER; CILINDRO PEDAL; PARAFLU FLUIDO DOT4 500; ADETIVO",
+     "itens": [
+      { "descricao": "BIELETA", "valor": 170.0 },
+      { "descricao": "DISCO FR DIAN", "valor": 650.0 },
+      { "descricao": "DISCO TRASEIRO", "valor": 650.0 },
+      { "descricao": "PASTILHA DE FREIO DIANTEIRA", "valor": 350.0 },
+      { "descricao": "PASTILHA TRASEIRA", "valor": 350.0 },
+      { "descricao": "EMBREAGEM", "valor": 3200.0 },
+      { "descricao": "CARTER", "valor": 1100.0 },
+      { "descricao": "CILINDRO PEDAL", "valor": 400.0 },
+      { "descricao": "PARAFLU FLUIDO DOT4 500", "valor": 250.0 },
+      { "descricao": "ADETIVO", "valor": 350.0 }
+     ]
+    },
+    {
+     "data": "2026-04-29",
+     "oficina": "TECNICAR CENTRO AUTOMOTIVO LTDA",
+     "grupo": "1007369",
+     "tipo": "servico",
+     "valor": 1850.0,
+     "descricao": "MAO DE OBRA"
     }
-   ]
+   ],
+   "totalGasto": 13654.0,
+   "qtdServicos": 8
+  },
+  {
+   "placa": "RAG9A13",
+   "servicos": [
+    {
+     "data": "2025-11-17",
+     "oficina": "GROCH FUNILARIA E PINTURA",
+     "grupo": "810871",
+     "tipo": "servico",
+     "valor": 2000.0,
+     "descricao": "REPARO E PINTURA PARACHOQUE TRASEIRO"
+    },
+    {
+     "data": "2026-02-16",
+     "oficina": "BONATTO AUTOPECAS LTDA - EPP",
+     "grupo": "902523",
+     "tipo": "produto",
+     "valor": 236.6,
+     "descricao": "OLEO ADITIVADO CAIXA CAMBIO 40 (5L)",
+     "itens": [ { "descricao": "OLEO ADITIVADO CAIXA CAMBIO 40 (5L)", "valor": 236.6 } ]
+    },
+    {
+     "data": "2026-03-03",
+     "oficina": "INSPECAMPOS INSPECAO VEICULAR LTDA",
+     "grupo": "inspecampos-0303",
+     "tipo": "servico",
+     "valor": 500.0,
+     "descricao": "SERVICO DE INSPECAO VEICULAR - LAUDO SIE - VEICULO PLACAS: RAG9A13"
+    },
+    {
+     "data": "2026-03-12",
+     "oficina": "RONALDO CERRY",
+     "grupo": "cerry-0312",
+     "tipo": "servico",
+     "valor": 600.0,
+     "descricao": "REPARO ELETRICO/MECANICO SISTEMA CADEIRANTE/EQUIPAMENTO DE ACESSIBILIDADE"
+    },
+    {
+     "data": "2026-03-19",
+     "oficina": "TECNICAR CENTRO AUTOMOTIVO LTDA",
+     "grupo": "tecnicar-1903",
+     "tipo": "produto",
+     "valor": 710.0,
+     "descricao": "TAMPA RESERV AGUA; RADIADOR DO AR QUENTE; ADETIVO (4un); RESERVATORIO DE AGUA",
+     "itens": [
+      { "descricao": "TAMPA RESERV AGUA", "valor": 60.0 },
+      { "descricao": "RADIADOR DO AR QUENTE", "valor": 350.0 },
+      { "descricao": "ADETIVO (4un)", "valor": 160.0 },
+      { "descricao": "RESERVATORIO DE AGUA", "valor": 140.0 }
+     ]
+    },
+    {
+     "data": "2026-03-19",
+     "oficina": "TECNICAR CENTRO AUTOMOTIVO LTDA",
+     "grupo": "tecnicar-1903",
+     "tipo": "servico",
+     "valor": 950.0,
+     "descricao": "MAO DE OBRA"
+    },
+    {
+     "data": "2026-06-26",
+     "oficina": "AUTO COLETIVO CACADOR LTDA",
+     "grupo": "1031857",
+     "tipo": "produto",
+     "valor": 889.8,
+     "descricao": "BARRA DIRECAO CURTA VOLA",
+     "itens": [ { "descricao": "BARRA DIRECAO CURTA VOLA", "valor": 889.8 } ]
+    },
+    {
+     "data": "2026-06-26",
+     "oficina": "AUTO COLETIVO CACADOR LTDA",
+     "grupo": "1031857",
+     "tipo": "servico",
+     "valor": 180.0,
+     "descricao": "MAO DE OBRA MECANICA / REMOVER AJUSTAR E TR. BARRA DIRECAO CURTA"
+    },
+    {
+     "data": "2026-06-26",
+     "oficina": "PNEU MAIS LTDA",
+     "grupo": "1022928",
+     "tipo": "servico",
+     "valor": 50.0,
+     "descricao": "CONSERTO DE PNEU"
+    },
+    {
+     "data": "2026-07-16",
+     "oficina": "AUTO COLETIVO CACADOR LTDA",
+     "grupo": "1050129",
+     "tipo": "produto",
+     "valor": 2207.26,
+     "descricao": "ABRACADEIRA PLASTICA 28C; ADITIVO RADIADOR CONCENTRADO; AGUA DESMINERALIZADA; CHAVE DIRECIONAL VOLARE; FUSIVEL LAMINA 10A; FUSIVEL LAMINA 15A; FUSIVEL LAMINA 30A; INTERRUPTOR PISCA ALERTA; LAMPADA 1034 2 POLOS 24V; LAMPADA 1141 24V 21W; LANTERNA DIRECIONAL LATERAL; MOTOR PORTA/MOTOR LIMPADOR; SOQUETE LAMPADA 2 POLOS",
+     "itens": [
+      { "descricao": "ABRACADEIRA PLASTICA 28C", "valor": 16.6 },
+      { "descricao": "ADITIVO RADIADOR CONCENTRADO", "valor": 149.94 },
+      { "descricao": "AGUA DESMINERALIZADA", "valor": 7.7 },
+      { "descricao": "CHAVE DIRECIONAL VOLARE", "valor": 1093.28 },
+      { "descricao": "FUSIVEL LAMINA 10A", "valor": 2.25 },
+      { "descricao": "FUSIVEL LAMINA 15A", "valor": 15.75 },
+      { "descricao": "FUSIVEL LAMINA 30A", "valor": 13.59 },
+      { "descricao": "INTERRUPTOR PISCA ALERTA", "valor": 189.79 },
+      { "descricao": "LAMPADA 1034 2 POLOS 24V", "valor": 7.12 },
+      { "descricao": "LAMPADA 1141 24V 21W", "valor": 8.56 },
+      { "descricao": "LANTERNA DIRECIONAL LATERAL", "valor": 85.35 },
+      { "descricao": "MOTOR PORTA/MOTOR LIMPADOR", "valor": 594.9 },
+      { "descricao": "SOQUETE LAMPADA 2 POLOS", "valor": 22.43 }
+     ]
+    },
+    {
+     "data": "2026-07-16",
+     "oficina": "AUTO COLETIVO CACADOR LTDA",
+     "grupo": "1050129",
+     "tipo": "servico",
+     "valor": 900.0,
+     "descricao": "MAO DE OBRA ELETRICA / TESTAR AJUSTAR E TR. CHAVE DIRECIONAL VOLARE / SUBSTITUIDO FUSIVEIS QUEIMADOS / TROCADO INTERRUPTOR PISCA ALERTA / SUBSTITUIDO SOQUETES E LAMPADAS QUEIMADAS / TROCADO MOTOR LIMPADOR PARABRISA / COMPLETADO ADITIVO E AGUA DESMINERALIZADA / TR. LANTERNA DIRECIONAL LATERAL"
+    }
+   ],
+   "totalGasto": 9223.66,
+   "qtdServicos": 11
   },
   {
    "placa": "SXT4A29",
-   "totalGasto": 2733.79,
-   "qtdServicos": 1,
    "servicos": [
     {
      "data": "2026-02-06",
      "oficina": "CARBONI DISTRIBUIDORA DE VEICULOS LTDA - IVDA",
-     "descricao": "(sem descrição detalhada na NF)",
+     "grupo": "902345",
+     "tipo": "produto",
      "valor": 2733.79,
-     "grupo": "902345"
+     "descricao": "FILTRO COMBUSTIVEL DAILY EURO6; FILTRO LUBRIFICANTE NOVA DAILY; ELEMENTO FILTRO AR NOVA DAILY MY; ELEMENTO FILTRANTE; FILTRO ANTI-POLEN; FILTRO AR SECO ELETROVALVULA; OLEO MOTOR 5W30 DAILY EURO V PETRONAS (9,5L); GRAXA PARA ROLAMENTOS PETRONAS",
+     "itens": [
+      { "descricao": "FILTRO COMBUSTIVEL DAILY EURO6", "valor": 585.43 },
+      { "descricao": "FILTRO LUBRIFICANTE NOVA DAILY", "valor": 164.52 },
+      { "descricao": "ELEMENTO FILTRO AR NOVA DAILY MY", "valor": 490.56 },
+      { "descricao": "ELEMENTO FILTRANTE", "valor": 444.8 },
+      { "descricao": "FILTRO ANTI-POLEN", "valor": 107.94 },
+      { "descricao": "FILTRO AR SECO ELETROVALVULA", "valor": 121.15 },
+      { "descricao": "OLEO MOTOR 5W30 DAILY EURO V PETRONAS (9,5L)", "valor": 789.36 },
+      { "descricao": "GRAXA PARA ROLAMENTOS PETRONAS", "valor": 30.03 }
+     ]
     }
-   ]
+   ],
+   "totalGasto": 2733.79,
+   "qtdServicos": 1
   },
   {
    "placa": "QIV6694",
-   "totalGasto": 2317.8,
-   "qtdServicos": 3,
    "servicos": [
     {
      "data": "2026-02-05",
      "oficina": "50.833.503 MAICON EVERTON CARNEIRO",
-     "descricao": "SERVIÇO (mecânica geral - sem detalhamento específico na NF)",
-     "valor": 830.0,
-     "grupo": "903005"
+     "grupo": "903005",
+     "tipo": "servico",
+     "valor": 480.0,
+     "descricao": "SERVICO"
+    },
+    {
+     "data": "2026-02-05",
+     "oficina": "50.833.503 MAICON EVERTON CARNEIRO",
+     "grupo": "903005",
+     "tipo": "produto",
+     "valor": 350.0,
+     "descricao": "KIT CORREIA DENTADA (KTB221/3 DAYCO)",
+     "itens": [ { "descricao": "KIT CORREIA DENTADA (KTB221/3 DAYCO)", "valor": 350.0 } ]
     },
     {
      "data": "2026-05-05",
      "oficina": "GRID CENTRO AUTOMOTIVO LTDA",
-     "descricao": "(sem descrição detalhada na NF)",
-     "valor": 1045.0,
-     "grupo": "1008222"
+     "grupo": "1008222",
+     "tipo": "produto",
+     "valor": 505.0,
+     "descricao": "BUCHA BARRA ESTAB; TERMINAL DIRECAO; BIELETA EST",
+     "itens": [
+      { "descricao": "BUCHA BARRA ESTAB", "valor": 130.0 },
+      { "descricao": "TERMINAL DIRECAO", "valor": 185.0 },
+      { "descricao": "BIELETA EST", "valor": 190.0 }
+     ]
+    },
+    {
+     "data": "2026-05-05",
+     "oficina": "GRID CENTRO AUTOMOTIVO LTDA",
+     "grupo": "1008222",
+     "tipo": "servico",
+     "valor": 540.0,
+     "descricao": "SERVICO MECANICO; GEOMETRIA 3D FLASCH (CARRO PEQUENO)"
     },
     {
      "data": "2026-05-22",
      "oficina": "GRID CENTRO AUTOMOTIVO LTDA",
-     "descricao": "(sem descrição detalhada na NF)",
+     "grupo": "1010002",
+     "tipo": "produto",
      "valor": 442.8,
-     "grupo": "1010002"
+     "descricao": "BATERIA MOURA 50ED",
+     "itens": [ { "descricao": "BATERIA MOURA 50ED", "valor": 442.8 } ]
     }
-   ]
+   ],
+   "totalGasto": 2317.8,
+   "qtdServicos": 5
   },
   {
    "placa": "QIF4649",
-   "totalGasto": 1650.0,
-   "qtdServicos": 1,
    "servicos": [
     {
      "data": "2026-04-02",
      "oficina": "GRID CENTRO AUTOMOTIVO LTDA",
-     "descricao": "(sem descrição detalhada na NF)",
-     "valor": 1650.0,
-     "grupo": "985336"
+     "grupo": "985336",
+     "tipo": "produto",
+     "valor": 1240.0,
+     "descricao": "BOTAO ALERTA/TRAVA/DESTRAVA KA HATCH 1.0; BOBINA PLAST ECOSPORT 1.6 16V; CABO VELA SUPRES FIESTA 1.6 16V; VELA IGNICAO FIESTA ZETEC ROCAN FLEX (4un)",
+     "itens": [
+      { "descricao": "BOTAO ALERTA/TRAVA/DESTRAVA KA HATCH 1.0", "valor": 280.0 },
+      { "descricao": "BOBINA PLAST ECOSPORT 1.6 16V", "valor": 460.0 },
+      { "descricao": "CABO VELA SUPRES FIESTA 1.6 16V", "valor": 290.0 },
+      { "descricao": "VELA IGNICAO FIESTA ZETEC ROCAN FLEX (4un)", "valor": 210.0 }
+     ]
+    },
+    {
+     "data": "2026-04-02",
+     "oficina": "GRID CENTRO AUTOMOTIVO LTDA",
+     "grupo": "985336",
+     "tipo": "servico",
+     "valor": 410.0,
+     "descricao": "SERVICO MECANICO; DIAGNOSTICO POR SCANNER"
+    },
+    {
+     "data": "2026-02-26",
+     "oficina": "",
+     "grupo": "911924",
+     "tipo": "servico",
+     "valor": 39.2,
+     "descricao": "INSTALACAO DE SENSOR NO FAROL PARA ABERTURA DE PORTAO - CONFORME ORCAMENTO 1092006"
     }
-   ]
+   ],
+   "totalGasto": 1689.2,
+   "qtdServicos": 3
   },
   {
    "placa": "MHO7933",
-   "totalGasto": 950.0,
-   "qtdServicos": 1,
    "servicos": [
     {
      "data": "2026-03-26",
      "oficina": "FRANCA & CIA LTDA",
-     "descricao": "(sem descrição detalhada na NF)",
+     "grupo": "934225",
+     "tipo": "produto",
      "valor": 950.0,
-     "grupo": "934225"
+     "descricao": "PNEU 175/70R14 84T MH01 DYN (2un)",
+     "itens": [ { "descricao": "PNEU 175/70R14 84T MH01 DYN (2un)", "valor": 950.0 } ]
     }
-   ]
+   ],
+   "totalGasto": 950.0,
+   "qtdServicos": 1
   },
   {
    "placa": "QIE4718",
-   "totalGasto": 180.0,
-   "qtdServicos": 1,
    "servicos": [
     {
      "data": "2026-04-24",
      "oficina": "",
-     "descricao": "serviço de guincho veiculo spin QIE 4718",
+     "grupo": "1001338",
+     "tipo": "servico",
      "valor": 180.0,
-     "grupo": "1001338"
+     "descricao": "SERVICO DE GUINCHO VEICULO SPIN QIE 4718"
     }
-   ]
+   ],
+   "totalGasto": 180.0,
+   "qtdServicos": 1
   }
  ],
- "semVeiculo": [
-  {
-   "grupo": "911924",
-   "data": "2026-02-26",
-   "oficina": "",
-   "descricao": "INSTALAÇÃO DE SENSOR NO FAROL PARA ABERTURA DE PORTÃO - CONFORME ORÇAMENTO 1092006 (confirmado: é de veículo, placa a identificar)",
-   "valor": 39.2
-  },
-  {
-   "grupo": "1007369",
-   "data": "2026-04-29",
-   "oficina": "TECNICAR CENTRO AUTOMOTIVO LTDA.",
-   "descricao": "mao de obra R$ 1850,00",
-   "valor": 9320.0
-  }
- ],
- "totalGeral": 49973.53,
- "atualizadoEm": "2026-08-10T00:00:00-03:00"
-     }
+ "semVeiculo": [],
+ "totalGeral": 51019.97,
+ "observacao": "Notas fiscais de produto (pecas) e servico (mao de obra) sao exibidas separadamente por Nota Fiscal (NF). NF 1007369 (TECNICAR, R$9.320,00) e NF 911924 (R$39,20) foram associadas as placas QIJ1629 e QIF4649 conforme confirmacao da responsavel.",
+ "atualizadoEm": "2026-08-11T00:00:00-03:00"
+}
