@@ -99,7 +99,10 @@
   }
   .tag.material { background: var(--azul-claro); color: var(--azul); }
   .tag.servico { background: #fdf1e6; color: var(--laranja); }
+  .tag.produto { background: #eafaf1; color: var(--verde); }
   .tag.pendente { background: #fee2e2; color: #b91c1c; }
+  .item-lista { margin: 0; padding-left: 16px; color: var(--cinza); font-size: 0.75rem; }
+  .item-lista li { margin: 1px 0; }
   .empenho-resumo, .veiculo-resumo { font-size: 0.78rem; color: var(--cinza); }
   .empenho-corpo, .veiculo-corpo { display: none; padding: 0 14px 14px; font-size: 0.82rem; }
   .empenho.aberto .empenho-corpo, .veiculo.aberto .veiculo-corpo { display: block; }
@@ -291,10 +294,20 @@ fetch('./veiculos.json')
           '<div class="veiculo-resumo">' + v.qtdServicos + ' servico(s) - Total gasto ' + moeda(v.totalGasto) + '</div></div>' +
           '<span class="seta">v</span></div>' +
           '<div class="veiculo-corpo">' +
-          '<table><thead><tr><th>Data</th><th>Oficina</th><th>NF</th><th>Servico</th><th>Valor</th></tr></thead><tbody>' +
+          '<table><thead><tr><th>Data</th><th>Oficina</th><th>NF</th><th>Tipo</th><th>Descricao</th><th>Valor</th></tr></thead><tbody>' +
           v.servicos.map(function(s) {
             const nfExibida = s.grupo && /^\d+$/.test(s.grupo) ? s.grupo : '-';
-            return '<tr><td>' + dataBr(s.data) + '</td><td>' + (s.oficina || '-') + '</td><td>' + nfExibida + '</td><td>' + s.descricao + '</td><td>' + moeda(s.valor) + '</td></tr>';
+            const tipo = s.tipo === 'produto' ? 'Produto' : 'Servico';
+            const tagClasse = s.tipo === 'produto' ? 'produto' : 'servico';
+            let descricaoHtml = s.descricao || '-';
+            if (s.itens && s.itens.length > 1) {
+              descricaoHtml = '<ul class="item-lista">' +
+                s.itens.map(function(i) { return '<li>' + i.descricao + ' - ' + moeda(i.valor) + '</li>'; }).join('') +
+                '</ul>';
+            }
+            return '<tr><td>' + dataBr(s.data) + '</td><td>' + (s.oficina || '-') + '</td><td>' + nfExibida + '</td>' +
+              '<td><span class="tag ' + tagClasse + '">' + tipo + '</span></td>' +
+              '<td>' + descricaoHtml + '</td><td>' + moeda(s.valor) + '</td></tr>';
           }).join('') +
           '</tbody></table></div>';
         listaEl.appendChild(div);
