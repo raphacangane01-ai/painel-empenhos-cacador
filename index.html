@@ -160,7 +160,7 @@
   </div>
 
   <footer>
-    Saldo empenhado = soma das emissoes de empenho. Saldo gasto = soma das liquidacoes. Saldo disponivel = empenhado - gasto - anulado.
+    Empenhado = soma das emissoes de empenho. Gasto = soma das liquidacoes. Saldo = valor "A liquidar" de cada empenho, conforme relatorio oficial (Empenhado - Liquidado - Anulado - Em liquidacao).
   </footer>
 </div>
 
@@ -204,8 +204,8 @@ fetch('./data.json')
     }
 
     let totais = {
-      material: { empenhado: 0, gasto: 0 },
-      servico: { empenhado: 0, gasto: 0 }
+      material: { empenhado: 0, gasto: 0, saldo: 0 },
+      servico: { empenhado: 0, gasto: 0, saldo: 0 }
     };
 
     const listaEl = document.getElementById('lista-empenhos');
@@ -216,17 +216,18 @@ fetch('./data.json')
         .filter(m => m.tipo.startsWith('Liquida'))
         .reduce((s, m) => s + m.valor, 0);
 
+      const saldo = typeof emp.aLiquidar === 'number' ? emp.aLiquidar : (emp.valorEmpenhado - gasto);
+
       if (totais[classe]) {
         totais[classe].empenhado += emp.valorEmpenhado;
         totais[classe].gasto += gasto;
+        totais[classe].saldo += saldo;
       }
 
       const notas = new Map();
       emp.movimentacoes.forEach(m => (m.notasFiscais || []).forEach(nf => {
         notas.set(nf.numero, nf);
       }));
-
-      const saldo = emp.valorEmpenhado - gasto;
 
       const div = document.createElement('div');
       div.className = 'empenho';
@@ -237,12 +238,12 @@ fetch('./data.json')
         (classe === 'material' ? 'Material' : classe === 'servico' ? 'Servico' : 'Outro') +
         '</span></div>' +
         '<div class="empenho-resumo">' + emp.especie + ' - ' + emp.elementoCodigo + ' - ' + emp.elementoNome +
-        ' - Empenhado ' + moeda(emp.valorEmpenhado) + ' - Gasto ' + moeda(gasto) + ' - Saldo ' + moeda(saldo) + '</div></div>' +
+        ' - Empenhado ' + moeda(emp.valorEmpenhado) + ' - Gasto ' + moeda(gasto) + ' - Saldo (a liquidar) ' + moeda(saldo) + '</div></div>' +
         '<span class="seta">v</span></div>' +
         '<div class="empenho-corpo">' +
         '<div><strong>Despesa:</strong> ' + (emp.despesa || '-') + '</div>' +
         '<div><strong>Fonte de recurso:</strong> ' + (emp.fonteRecurso || '-') + '</div>' +
-        '<div><strong>Saldo disponivel:</strong> ' + moeda(saldo) + '</div>' +
+        '<div><strong>Saldo (a liquidar):</strong> ' + moeda(saldo) + '</div>' +
         '<div style="margin-top:6px;"><strong>Objeto:</strong> ' + (emp.objetoResumido || '-') + '</div>' +
         '<table><thead><tr><th>Data</th><th>Tipo</th><th>Valor</th></tr></thead><tbody>' +
         emp.movimentacoes.map(function(m) {
@@ -263,10 +264,10 @@ fetch('./data.json')
     const linhas = [
       ['material', 'Empenhado - Material', totais.material.empenhado],
       ['material', 'Gasto - Material', totais.material.gasto],
-      ['material', 'Disponivel - Material', totais.material.empenhado - totais.material.gasto],
+      ['material', 'Saldo (a liquidar) - Material', totais.material.saldo],
       ['servico', 'Empenhado - Servico', totais.servico.empenhado],
       ['servico', 'Gasto - Servico', totais.servico.gasto],
-      ['servico', 'Disponivel - Servico', totais.servico.empenhado - totais.servico.gasto],
+      ['servico', 'Saldo (a liquidar) - Servico', totais.servico.saldo],
     ];
     cardsEl.innerHTML = linhas.map(function(item) {
       var classe = item[0]; var label = item[1]; var valor = item[2];
