@@ -226,6 +226,8 @@ fetch('./data.json')
         notas.set(nf.numero, nf);
       }));
 
+      const saldo = emp.valorEmpenhado - gasto;
+
       const div = document.createElement('div');
       div.className = 'empenho';
 
@@ -235,10 +237,13 @@ fetch('./data.json')
         (classe === 'material' ? 'Material' : classe === 'servico' ? 'Servico' : 'Outro') +
         '</span></div>' +
         '<div class="empenho-resumo">' + emp.especie + ' - ' + emp.elementoCodigo + ' - ' + emp.elementoNome +
-        ' - Empenhado ' + moeda(emp.valorEmpenhado) + ' - Gasto ' + moeda(gasto) + '</div></div>' +
+        ' - Empenhado ' + moeda(emp.valorEmpenhado) + ' - Gasto ' + moeda(gasto) + ' - Saldo ' + moeda(saldo) + '</div></div>' +
         '<span class="seta">v</span></div>' +
         '<div class="empenho-corpo">' +
-        '<div><strong>Objeto:</strong> ' + (emp.objetoResumido || '-') + '</div>' +
+        '<div><strong>Despesa:</strong> ' + (emp.despesa || '-') + '</div>' +
+        '<div><strong>Fonte de recurso:</strong> ' + (emp.fonteRecurso || '-') + '</div>' +
+        '<div><strong>Saldo disponivel:</strong> ' + moeda(saldo) + '</div>' +
+        '<div style="margin-top:6px;"><strong>Objeto:</strong> ' + (emp.objetoResumido || '-') + '</div>' +
         '<table><thead><tr><th>Data</th><th>Tipo</th><th>Valor</th></tr></thead><tbody>' +
         emp.movimentacoes.map(function(m) {
           return '<tr><td>' + dataBr(m.data) + '</td><td>' + m.tipo + '</td><td>' + moeda(m.valor) + '</td></tr>';
