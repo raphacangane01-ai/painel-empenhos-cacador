@@ -5,8 +5,8 @@
  },
  "unidadeOrcamentaria": "2006 - SECRETARIA DE ESPORTES E LAZER",
  "orgaoOrcamentario": "2000 - CHEFIA DO EXECUTIVO",
- "atualizadoEm": "2026-08-12T18:23:00-03:00",
- "observacao": "Dados extraidos do relatorio de Movimentacoes de Empenhos do e-Publica (emissao 12/08/2026), contendo os 19 empenhos do fornecedor para a unidade 2006. Notas fiscais compartilhadas entre mais de um empenho (408261, 408262 e 452740) tem o valor de face total indicado no campo da nota, com o valor efetivamente aplicado a cada empenho no valor da movimentacao. NF 452740 (R$5.396,46) foi liquidada dividida entre os empenhos 8157, 8158 e 8223. As NFs 452740 e 452746 ainda nao foram recebidas para classificacao na aba Veiculos.",
+ "atualizadoEm": "2026-08-13T18:38:00-03:00",
+ "observacao": "Dados extraidos do relatorio de Movimentacoes de Empenhos do e-Publica (emissao 13/08/2026), contendo os 19 empenhos do fornecedor para a unidade 2006. Notas fiscais compartilhadas entre mais de um empenho (408261, 408262 e 452740) tem o valor de face total indicado no campo da nota, com o valor efetivamente aplicado a cada empenho no valor da movimentacao. NF 452740 (R$5.396,46) foi liquidada dividida entre os empenhos 8157, 8158 e 8223. As NFs 452740 e 452746 ainda nao foram recebidas para classificacao na aba Veiculos. O campo Saldo corresponde ao valor 'A liquidar' de cada empenho, conforme consta no relatorio oficial (Empenhado - Liquidado - Anulado - Em liquidacao).",
  "empenhos": [
   {
    "numero": "202/2026",
@@ -80,7 +80,8 @@
       }
      ]
     }
-   ]
+   ],
+   "aLiquidar": 0.0
   },
   {
    "numero": "203/2026",
@@ -167,7 +168,8 @@
       }
      ]
     }
-   ]
+   ],
+   "aLiquidar": 4494.8
   },
   {
    "numero": "4400/2026",
@@ -202,7 +204,8 @@
       }
      ]
     }
-   ]
+   ],
+   "aLiquidar": 3267.53
   },
   {
    "numero": "4401/2026",
@@ -237,7 +240,8 @@
       }
      ]
     }
-   ]
+   ],
+   "aLiquidar": 0.0
   },
   {
    "numero": "7013/2026",
@@ -272,7 +276,8 @@
       }
      ]
     }
-   ]
+   ],
+   "aLiquidar": 0.0
   },
   {
    "numero": "8157/2026",
@@ -307,7 +312,8 @@
       }
      ]
     }
-   ]
+   ],
+   "aLiquidar": 0.0
   },
   {
    "numero": "8158/2026",
@@ -342,7 +348,8 @@
       }
      ]
     }
-   ]
+   ],
+   "aLiquidar": 0.0
   },
   {
    "numero": "8160/2026",
@@ -364,7 +371,8 @@
      "valor": 1390.0,
      "notasFiscais": []
     }
-   ]
+   ],
+   "aLiquidar": 1390.0
   },
   {
    "numero": "8161/2026",
@@ -386,7 +394,8 @@
      "valor": 3537.45,
      "notasFiscais": []
     }
-   ]
+   ],
+   "aLiquidar": 3537.45
   },
   {
    "numero": "8223/2026",
@@ -421,7 +430,8 @@
       }
      ]
     }
-   ]
+   ],
+   "aLiquidar": 1678.08
   },
   {
    "numero": "8224/2026",
@@ -443,7 +453,8 @@
      "valor": 610.0,
      "notasFiscais": []
     }
-   ]
+   ],
+   "aLiquidar": 610.0
   },
   {
    "numero": "8225/2026",
@@ -465,7 +476,8 @@
      "valor": 2800.0,
      "notasFiscais": []
     }
-   ]
+   ],
+   "aLiquidar": 2800.0
   },
   {
    "numero": "8226/2026",
@@ -487,7 +499,8 @@
      "valor": 891.63,
      "notasFiscais": []
     }
-   ]
+   ],
+   "aLiquidar": 891.63
   },
   {
    "numero": "8227/2026",
@@ -509,7 +522,8 @@
      "valor": 10000.0,
      "notasFiscais": []
     }
-   ]
+   ],
+   "aLiquidar": 10000.0
   },
   {
    "numero": "8228/2026",
@@ -531,7 +545,8 @@
      "valor": 5000.0,
      "notasFiscais": []
     }
-   ]
+   ],
+   "aLiquidar": 5000.0
   },
   {
    "numero": "8229/2026",
@@ -553,7 +568,8 @@
      "valor": 7698.37,
      "notasFiscais": []
     }
-   ]
+   ],
+   "aLiquidar": 7698.37
   },
   {
    "numero": "8230/2026",
@@ -575,7 +591,8 @@
      "valor": 7980.0,
      "notasFiscais": []
     }
-   ]
+   ],
+   "aLiquidar": 7980.0
   },
   {
    "numero": "8267/2026",
@@ -597,7 +614,8 @@
      "valor": 900.0,
      "notasFiscais": []
     }
-   ]
+   ],
+   "aLiquidar": 900.0
   },
   {
    "numero": "8268/2026",
@@ -619,7 +637,8 @@
      "valor": 2207.26,
      "notasFiscais": []
     }
-   ]
+   ],
+   "aLiquidar": 2207.26
   }
  ]
-  }
+}
