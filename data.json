@@ -5,8 +5,8 @@
  },
  "unidadeOrcamentaria": "2006 - SECRETARIA DE ESPORTES E LAZER",
  "orgaoOrcamentario": "2000 - CHEFIA DO EXECUTIVO",
- "atualizadoEm": "2026-08-13T18:38:00-03:00",
- "observacao": "Dados extraidos do relatorio de Movimentacoes de Empenhos do e-Publica (emissao 13/08/2026), contendo os 19 empenhos do fornecedor para a unidade 2006. Notas fiscais compartilhadas entre mais de um empenho (408261, 408262 e 452740) tem o valor de face total indicado no campo da nota, com o valor efetivamente aplicado a cada empenho no valor da movimentacao. NF 452740 (R$5.396,46) foi liquidada dividida entre os empenhos 8157, 8158 e 8223. As NFs 452740 e 452746 ainda nao foram recebidas para classificacao na aba Veiculos. O campo Saldo corresponde ao valor 'A liquidar' de cada empenho, conforme consta no relatorio oficial (Empenhado - Liquidado - Anulado - Em liquidacao).",
+ "atualizadoEm": "2026-08-24T14:10:00-03:00",
+ "observacao": "Dados extraidos do relatorio de Movimentacoes de Empenhos do e-Publica (emissao 24/08/2026), contendo os 19 empenhos do fornecedor para a unidade 2006. Notas fiscais compartilhadas entre mais de um empenho (408261, 408262, 452740 e 482581) tem o valor de face total indicado no campo da nota, com o valor efetivamente aplicado a cada empenho no valor da movimentacao. NF 452740 (R$5.396,46) foi liquidada dividida entre os empenhos 8157, 8158 e 8223. NF 482581 (R$3.130,95) foi liquidada dividida entre os empenhos 8223 e 8225. As NFs 452740, 452746, 482579 e 482581 ainda nao foram recebidas para classificacao na aba Veiculos. O campo Saldo corresponde ao valor 'A liquidar' de cada empenho, conforme consta no relatorio oficial (Empenhado - Liquidado - Anulado - Em liquidacao).",
  "empenhos": [
   {
    "numero": "202/2026",
@@ -393,9 +393,22 @@
      "tipo": "Emissao de Empenho Orcamentario",
      "valor": 3537.45,
      "notasFiscais": []
+    },
+    {
+     "data": "2026-08-14",
+     "sequencia": "10199393",
+     "tipo": "Liquidacao de Empenho Orcamentario",
+     "valor": 2299.77,
+     "notasFiscais": [
+      {
+       "numero": "482579",
+       "data": "2026-08-01",
+       "valor": 2299.77
+      }
+     ]
     }
    ],
-   "aLiquidar": 3537.45
+   "aLiquidar": 1237.68
   },
   {
    "numero": "8223/2026",
@@ -429,9 +442,22 @@
        "valor": 5396.46
       }
      ]
+    },
+    {
+     "data": "2026-08-14",
+     "sequencia": "10199399",
+     "tipo": "Liquidacao de Empenho Orcamentario",
+     "valor": 1678.08,
+     "notasFiscais": [
+      {
+       "numero": "482581",
+       "data": "2026-08-01",
+       "valor": 3130.95
+      }
+     ]
     }
    ],
-   "aLiquidar": 1678.08
+   "aLiquidar": 0.0
   },
   {
    "numero": "8224/2026",
@@ -475,9 +501,22 @@
      "tipo": "Emissao de Empenho Orcamentario",
      "valor": 2800.0,
      "notasFiscais": []
+    },
+    {
+     "data": "2026-08-14",
+     "sequencia": "10199402",
+     "tipo": "Liquidacao de Empenho Orcamentario",
+     "valor": 1452.87,
+     "notasFiscais": [
+      {
+       "numero": "482581",
+       "data": "2026-08-01",
+       "valor": 3130.95
+      }
+     ]
     }
    ],
-   "aLiquidar": 2800.0
+   "aLiquidar": 1347.13
   },
   {
    "numero": "8226/2026",
