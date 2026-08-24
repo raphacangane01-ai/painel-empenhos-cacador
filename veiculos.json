@@ -11,10 +11,22 @@
      "valor": 11767.52,
      "descricao": "ADESIVO PARABRISA POLIUR; FITA CREPE 18X40 AMARELA; PARABRISA MPOLO VOLARE C; PNEU 215/75 R16C (4un)",
      "itens": [
-      { "descricao": "ADESIVO PARABRISA POLIUR", "valor": 269.85 },
-      { "descricao": "FITA CREPE 18X40 AMARELA", "valor": 14.11 },
-      { "descricao": "PARABRISA MPOLO VOLARE C", "valor": 6900.0 },
-      { "descricao": "PNEU 215/75 R16C (4un)", "valor": 4583.56 }
+      {
+       "descricao": "ADESIVO PARABRISA POLIUR",
+       "valor": 269.85
+      },
+      {
+       "descricao": "FITA CREPE 18X40 AMARELA",
+       "valor": 14.11
+      },
+      {
+       "descricao": "PARABRISA MPOLO VOLARE C",
+       "valor": 6900.0
+      },
+      {
+       "descricao": "PNEU 215/75 R16C (4un)",
+       "valor": 4583.56
+      }
      ]
     },
     {
@@ -33,10 +45,22 @@
      "valor": 4600.0,
      "descricao": "FAROL DIANTEIRO ESQUERDO; COMPLEMENTO PARACHOQUE TRASEIRO; GRADE DIANTEIRA ESQUERDA; PINO BATENTE CENTRAL DO CAPO",
      "itens": [
-      { "descricao": "FAROL DIANTEIRO ESQUERDO", "valor": 1650.0 },
-      { "descricao": "COMPLEMENTO PARACHOQUE TRASEIRO", "valor": 2050.0 },
-      { "descricao": "GRADE DIANTEIRA ESQUERDA", "valor": 650.0 },
-      { "descricao": "PINO BATENTE CENTRAL DO CAPO", "valor": 250.0 }
+      {
+       "descricao": "FAROL DIANTEIRO ESQUERDO",
+       "valor": 1650.0
+      },
+      {
+       "descricao": "COMPLEMENTO PARACHOQUE TRASEIRO",
+       "valor": 2050.0
+      },
+      {
+       "descricao": "GRADE DIANTEIRA ESQUERDA",
+       "valor": 650.0
+      },
+      {
+       "descricao": "PINO BATENTE CENTRAL DO CAPO",
+       "valor": 250.0
+      }
      ]
     },
     {
@@ -62,7 +86,12 @@
      "tipo": "produto",
      "valor": 27.0,
      "descricao": "VALVULA DE PNEU S/ CAMARA FINA CURTA",
-     "itens": [ { "descricao": "VALVULA DE PNEU S/ CAMARA FINA CURTA", "valor": 27.0 } ]
+     "itens": [
+      {
+       "descricao": "VALVULA DE PNEU S/ CAMARA FINA CURTA",
+       "valor": 27.0
+      }
+     ]
     },
     {
      "data": "2026-07-07",
@@ -87,9 +116,18 @@
      "valor": 1585.0,
      "descricao": "KIT EMBREAGEM E ATUADOR; CILINDRO MESTRE EMBREAGEM (PEDAL); OLEO DE CAIXA 75W90",
      "itens": [
-      { "descricao": "KIT EMBREAGEM E ATUADOR", "valor": 1090.0 },
-      { "descricao": "CILINDRO MESTRE EMBREAGEM (PEDAL)", "valor": 410.0 },
-      { "descricao": "OLEO DE CAIXA 75W90", "valor": 85.0 }
+      {
+       "descricao": "KIT EMBREAGEM E ATUADOR",
+       "valor": 1090.0
+      },
+      {
+       "descricao": "CILINDRO MESTRE EMBREAGEM (PEDAL)",
+       "valor": 410.0
+      },
+      {
+       "descricao": "OLEO DE CAIXA 75W90",
+       "valor": 85.0
+      }
      ]
     },
     {
@@ -107,7 +145,12 @@
      "tipo": "produto",
      "valor": 265.0,
      "descricao": "PASTILHAS FR DIANT",
-     "itens": [ { "descricao": "PASTILHAS FR DIANT", "valor": 265.0 } ]
+     "itens": [
+      {
+       "descricao": "PASTILHAS FR DIANT",
+       "valor": 265.0
+      }
+     ]
     },
     {
      "data": "2026-05-07",
@@ -125,10 +168,22 @@
      "valor": 924.0,
      "descricao": "SOLUCAO ARREF ORG 33% ROSADA (4L); RADIADOR AR QUENTE PRISMA SPIN C; ABRACADEIRA SEM FIM ZNB (4un); PRODUTO (item diverso)",
      "itens": [
-      { "descricao": "SOLUCAO ARREF ORG 33% ROSADA (4L)", "valor": 180.0 },
-      { "descricao": "RADIADOR AR QUENTE PRISMA SPIN C", "valor": 470.0 },
-      { "descricao": "ABRACADEIRA SEM FIM ZNB (4un)", "valor": 24.0 },
-      { "descricao": "PRODUTO (item diverso)", "valor": 250.0 }
+      {
+       "descricao": "SOLUCAO ARREF ORG 33% ROSADA (4L)",
+       "valor": 180.0
+      },
+      {
+       "descricao": "RADIADOR AR QUENTE PRISMA SPIN C",
+       "valor": 470.0
+      },
+      {
+       "descricao": "ABRACADEIRA SEM FIM ZNB (4un)",
+       "valor": 24.0
+      },
+      {
+       "descricao": "PRODUTO (item diverso)",
+       "valor": 250.0
+      }
      ]
     },
     {
@@ -147,16 +202,46 @@
      "valor": 7470.0,
      "descricao": "BIELETA; DISCO FR DIAN; DISCO TRASEIRO; PASTILHA DE FREIO DIANTEIRA; PASTILHA TRASEIRA; EMBREAGEM; CARTER; CILINDRO PEDAL; PARAFLU FLUIDO DOT4 500; ADETIVO",
      "itens": [
-      { "descricao": "BIELETA", "valor": 170.0 },
-      { "descricao": "DISCO FR DIAN", "valor": 650.0 },
-      { "descricao": "DISCO TRASEIRO", "valor": 650.0 },
-      { "descricao": "PASTILHA DE FREIO DIANTEIRA", "valor": 350.0 },
-      { "descricao": "PASTILHA TRASEIRA", "valor": 350.0 },
-      { "descricao": "EMBREAGEM", "valor": 3200.0 },
-      { "descricao": "CARTER", "valor": 1100.0 },
-      { "descricao": "CILINDRO PEDAL", "valor": 400.0 },
-      { "descricao": "PARAFLU FLUIDO DOT4 500", "valor": 250.0 },
-      { "descricao": "ADETIVO", "valor": 350.0 }
+      {
+       "descricao": "BIELETA",
+       "valor": 170.0
+      },
+      {
+       "descricao": "DISCO FR DIAN",
+       "valor": 650.0
+      },
+      {
+       "descricao": "DISCO TRASEIRO",
+       "valor": 650.0
+      },
+      {
+       "descricao": "PASTILHA DE FREIO DIANTEIRA",
+       "valor": 350.0
+      },
+      {
+       "descricao": "PASTILHA TRASEIRA",
+       "valor": 350.0
+      },
+      {
+       "descricao": "EMBREAGEM",
+       "valor": 3200.0
+      },
+      {
+       "descricao": "CARTER",
+       "valor": 1100.0
+      },
+      {
+       "descricao": "CILINDRO PEDAL",
+       "valor": 400.0
+      },
+      {
+       "descricao": "PARAFLU FLUIDO DOT4 500",
+       "valor": 250.0
+      },
+      {
+       "descricao": "ADETIVO",
+       "valor": 350.0
+      }
      ]
     },
     {
@@ -189,7 +274,12 @@
      "tipo": "produto",
      "valor": 236.6,
      "descricao": "OLEO ADITIVADO CAIXA CAMBIO 40 (5L)",
-     "itens": [ { "descricao": "OLEO ADITIVADO CAIXA CAMBIO 40 (5L)", "valor": 236.6 } ]
+     "itens": [
+      {
+       "descricao": "OLEO ADITIVADO CAIXA CAMBIO 40 (5L)",
+       "valor": 236.6
+      }
+     ]
     },
     {
      "data": "2026-03-03",
@@ -215,10 +305,22 @@
      "valor": 710.0,
      "descricao": "TAMPA RESERV AGUA; RADIADOR DO AR QUENTE; ADETIVO (4un); RESERVATORIO DE AGUA",
      "itens": [
-      { "descricao": "TAMPA RESERV AGUA", "valor": 60.0 },
-      { "descricao": "RADIADOR DO AR QUENTE", "valor": 350.0 },
-      { "descricao": "ADETIVO (4un)", "valor": 160.0 },
-      { "descricao": "RESERVATORIO DE AGUA", "valor": 140.0 }
+      {
+       "descricao": "TAMPA RESERV AGUA",
+       "valor": 60.0
+      },
+      {
+       "descricao": "RADIADOR DO AR QUENTE",
+       "valor": 350.0
+      },
+      {
+       "descricao": "ADETIVO (4un)",
+       "valor": 160.0
+      },
+      {
+       "descricao": "RESERVATORIO DE AGUA",
+       "valor": 140.0
+      }
      ]
     },
     {
@@ -236,7 +338,12 @@
      "tipo": "produto",
      "valor": 889.8,
      "descricao": "BARRA DIRECAO CURTA VOLA",
-     "itens": [ { "descricao": "BARRA DIRECAO CURTA VOLA", "valor": 889.8 } ]
+     "itens": [
+      {
+       "descricao": "BARRA DIRECAO CURTA VOLA",
+       "valor": 889.8
+      }
+     ]
     },
     {
      "data": "2026-06-26",
@@ -262,19 +369,58 @@
      "valor": 2207.26,
      "descricao": "ABRACADEIRA PLASTICA 28C; ADITIVO RADIADOR CONCENTRADO; AGUA DESMINERALIZADA; CHAVE DIRECIONAL VOLARE; FUSIVEL LAMINA 10A; FUSIVEL LAMINA 15A; FUSIVEL LAMINA 30A; INTERRUPTOR PISCA ALERTA; LAMPADA 1034 2 POLOS 24V; LAMPADA 1141 24V 21W; LANTERNA DIRECIONAL LATERAL; MOTOR PORTA/MOTOR LIMPADOR; SOQUETE LAMPADA 2 POLOS",
      "itens": [
-      { "descricao": "ABRACADEIRA PLASTICA 28C", "valor": 16.6 },
-      { "descricao": "ADITIVO RADIADOR CONCENTRADO", "valor": 149.94 },
-      { "descricao": "AGUA DESMINERALIZADA", "valor": 7.7 },
-      { "descricao": "CHAVE DIRECIONAL VOLARE", "valor": 1093.28 },
-      { "descricao": "FUSIVEL LAMINA 10A", "valor": 2.25 },
-      { "descricao": "FUSIVEL LAMINA 15A", "valor": 15.75 },
-      { "descricao": "FUSIVEL LAMINA 30A", "valor": 13.59 },
-      { "descricao": "INTERRUPTOR PISCA ALERTA", "valor": 189.79 },
-      { "descricao": "LAMPADA 1034 2 POLOS 24V", "valor": 7.12 },
-      { "descricao": "LAMPADA 1141 24V 21W", "valor": 8.56 },
-      { "descricao": "LANTERNA DIRECIONAL LATERAL", "valor": 85.35 },
-      { "descricao": "MOTOR PORTA/MOTOR LIMPADOR", "valor": 594.9 },
-      { "descricao": "SOQUETE LAMPADA 2 POLOS", "valor": 22.43 }
+      {
+       "descricao": "ABRACADEIRA PLASTICA 28C",
+       "valor": 16.6
+      },
+      {
+       "descricao": "ADITIVO RADIADOR CONCENTRADO",
+       "valor": 149.94
+      },
+      {
+       "descricao": "AGUA DESMINERALIZADA",
+       "valor": 7.7
+      },
+      {
+       "descricao": "CHAVE DIRECIONAL VOLARE",
+       "valor": 1093.28
+      },
+      {
+       "descricao": "FUSIVEL LAMINA 10A",
+       "valor": 2.25
+      },
+      {
+       "descricao": "FUSIVEL LAMINA 15A",
+       "valor": 15.75
+      },
+      {
+       "descricao": "FUSIVEL LAMINA 30A",
+       "valor": 13.59
+      },
+      {
+       "descricao": "INTERRUPTOR PISCA ALERTA",
+       "valor": 189.79
+      },
+      {
+       "descricao": "LAMPADA 1034 2 POLOS 24V",
+       "valor": 7.12
+      },
+      {
+       "descricao": "LAMPADA 1141 24V 21W",
+       "valor": 8.56
+      },
+      {
+       "descricao": "LANTERNA DIRECIONAL LATERAL",
+       "valor": 85.35
+      },
+      {
+       "descricao": "MOTOR PORTA/MOTOR LIMPADOR",
+       "valor": 594.9
+      },
+      {
+       "descricao": "SOQUETE LAMPADA 2 POLOS",
+       "valor": 22.43
+      }
      ]
     },
     {
@@ -300,14 +446,38 @@
      "valor": 2733.79,
      "descricao": "FILTRO COMBUSTIVEL DAILY EURO6; FILTRO LUBRIFICANTE NOVA DAILY; ELEMENTO FILTRO AR NOVA DAILY MY; ELEMENTO FILTRANTE; FILTRO ANTI-POLEN; FILTRO AR SECO ELETROVALVULA; OLEO MOTOR 5W30 DAILY EURO V PETRONAS (9,5L); GRAXA PARA ROLAMENTOS PETRONAS",
      "itens": [
-      { "descricao": "FILTRO COMBUSTIVEL DAILY EURO6", "valor": 585.43 },
-      { "descricao": "FILTRO LUBRIFICANTE NOVA DAILY", "valor": 164.52 },
-      { "descricao": "ELEMENTO FILTRO AR NOVA DAILY MY", "valor": 490.56 },
-      { "descricao": "ELEMENTO FILTRANTE", "valor": 444.8 },
-      { "descricao": "FILTRO ANTI-POLEN", "valor": 107.94 },
-      { "descricao": "FILTRO AR SECO ELETROVALVULA", "valor": 121.15 },
-      { "descricao": "OLEO MOTOR 5W30 DAILY EURO V PETRONAS (9,5L)", "valor": 789.36 },
-      { "descricao": "GRAXA PARA ROLAMENTOS PETRONAS", "valor": 30.03 }
+      {
+       "descricao": "FILTRO COMBUSTIVEL DAILY EURO6",
+       "valor": 585.43
+      },
+      {
+       "descricao": "FILTRO LUBRIFICANTE NOVA DAILY",
+       "valor": 164.52
+      },
+      {
+       "descricao": "ELEMENTO FILTRO AR NOVA DAILY MY",
+       "valor": 490.56
+      },
+      {
+       "descricao": "ELEMENTO FILTRANTE",
+       "valor": 444.8
+      },
+      {
+       "descricao": "FILTRO ANTI-POLEN",
+       "valor": 107.94
+      },
+      {
+       "descricao": "FILTRO AR SECO ELETROVALVULA",
+       "valor": 121.15
+      },
+      {
+       "descricao": "OLEO MOTOR 5W30 DAILY EURO V PETRONAS (9,5L)",
+       "valor": 789.36
+      },
+      {
+       "descricao": "GRAXA PARA ROLAMENTOS PETRONAS",
+       "valor": 30.03
+      }
      ]
     }
    ],
@@ -332,7 +502,12 @@
      "tipo": "produto",
      "valor": 350.0,
      "descricao": "KIT CORREIA DENTADA (KTB221/3 DAYCO)",
-     "itens": [ { "descricao": "KIT CORREIA DENTADA (KTB221/3 DAYCO)", "valor": 350.0 } ]
+     "itens": [
+      {
+       "descricao": "KIT CORREIA DENTADA (KTB221/3 DAYCO)",
+       "valor": 350.0
+      }
+     ]
     },
     {
      "data": "2026-05-05",
@@ -342,9 +517,18 @@
      "valor": 505.0,
      "descricao": "BUCHA BARRA ESTAB; TERMINAL DIRECAO; BIELETA EST",
      "itens": [
-      { "descricao": "BUCHA BARRA ESTAB", "valor": 130.0 },
-      { "descricao": "TERMINAL DIRECAO", "valor": 185.0 },
-      { "descricao": "BIELETA EST", "valor": 190.0 }
+      {
+       "descricao": "BUCHA BARRA ESTAB",
+       "valor": 130.0
+      },
+      {
+       "descricao": "TERMINAL DIRECAO",
+       "valor": 185.0
+      },
+      {
+       "descricao": "BIELETA EST",
+       "valor": 190.0
+      }
      ]
     },
     {
@@ -362,7 +546,12 @@
      "tipo": "produto",
      "valor": 442.8,
      "descricao": "BATERIA MOURA 50ED",
-     "itens": [ { "descricao": "BATERIA MOURA 50ED", "valor": 442.8 } ]
+     "itens": [
+      {
+       "descricao": "BATERIA MOURA 50ED",
+       "valor": 442.8
+      }
+     ]
     }
    ],
    "totalGasto": 2317.8,
@@ -379,10 +568,22 @@
      "valor": 1240.0,
      "descricao": "BOTAO ALERTA/TRAVA/DESTRAVA KA HATCH 1.0; BOBINA PLAST ECOSPORT 1.6 16V; CABO VELA SUPRES FIESTA 1.6 16V; VELA IGNICAO FIESTA ZETEC ROCAN FLEX (4un)",
      "itens": [
-      { "descricao": "BOTAO ALERTA/TRAVA/DESTRAVA KA HATCH 1.0", "valor": 280.0 },
-      { "descricao": "BOBINA PLAST ECOSPORT 1.6 16V", "valor": 460.0 },
-      { "descricao": "CABO VELA SUPRES FIESTA 1.6 16V", "valor": 290.0 },
-      { "descricao": "VELA IGNICAO FIESTA ZETEC ROCAN FLEX (4un)", "valor": 210.0 }
+      {
+       "descricao": "BOTAO ALERTA/TRAVA/DESTRAVA KA HATCH 1.0",
+       "valor": 280.0
+      },
+      {
+       "descricao": "BOBINA PLAST ECOSPORT 1.6 16V",
+       "valor": 460.0
+      },
+      {
+       "descricao": "CABO VELA SUPRES FIESTA 1.6 16V",
+       "valor": 290.0
+      },
+      {
+       "descricao": "VELA IGNICAO FIESTA ZETEC ROCAN FLEX (4un)",
+       "valor": 210.0
+      }
      ]
     },
     {
@@ -415,7 +616,12 @@
      "tipo": "produto",
      "valor": 950.0,
      "descricao": "PNEU 175/70R14 84T MH01 DYN (2un)",
-     "itens": [ { "descricao": "PNEU 175/70R14 84T MH01 DYN (2un)", "valor": 950.0 } ]
+     "itens": [
+      {
+       "descricao": "PNEU 175/70R14 84T MH01 DYN (2un)",
+       "valor": 950.0
+      }
+     ]
     }
    ],
    "totalGasto": 950.0,
@@ -437,8 +643,23 @@
    "qtdServicos": 1
   }
  ],
- "semVeiculo": [],
+ "semVeiculo": [
+  {
+   "data": "2026-08-01",
+   "grupo": "482579",
+   "valor": 2299.77,
+   "oficina": null,
+   "descricao": "Nota fiscal pendente de classificacao (adicionada automaticamente)"
+  },
+  {
+   "data": "2026-08-01",
+   "grupo": "482581",
+   "valor": 3130.95,
+   "oficina": null,
+   "descricao": "Nota fiscal pendente de classificacao (adicionada automaticamente)"
+  }
+ ],
  "totalGeral": 51019.97,
- "observacao": "Notas fiscais de produto (pecas) e servico (mao de obra) sao exibidas separadamente por Nota Fiscal (NF). NF 1007369 (TECNICAR, R$9.320,00) e NF 911924 (R$39,20) foram associadas as placas QIJ1629 e QIF4649 conforme confirmacao da responsavel.",
- "atualizadoEm": "2026-08-11T00:00:00-03:00"
+ "observacao": "Notas fiscais de produto (pecas) e servico (mao de obra) sao exibidas separadamente por Nota Fiscal (NF). NF 1007369 (TECNICAR, R$9.320,00) e NF 911924 (R$39,20) foram associadas as placas QIJ1629 e QIF4649 conforme confirmacao da responsavel. NFs 482579 (R$2.299,77) e 482581 (R$3.130,95) aguardam classificacao manual pela Raphaella.",
+ "atualizadoEm": "2026-08-24T14:10:00-03:00"
 }
