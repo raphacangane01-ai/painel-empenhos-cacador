@@ -5,8 +5,8 @@
  },
  "unidadeOrcamentaria": "2006 - SECRETARIA DE ESPORTES E LAZER",
  "orgaoOrcamentario": "2000 - CHEFIA DO EXECUTIVO",
- "atualizadoEm": "2026-08-24T14:10:00-03:00",
- "observacao": "Dados extraidos do relatorio de Movimentacoes de Empenhos do e-Publica (emissao 24/08/2026), contendo os 19 empenhos do fornecedor para a unidade 2006. Notas fiscais compartilhadas entre mais de um empenho (408261, 408262, 452740 e 482581) tem o valor de face total indicado no campo da nota, com o valor efetivamente aplicado a cada empenho no valor da movimentacao. NF 452740 (R$5.396,46) foi liquidada dividida entre os empenhos 8157, 8158 e 8223. NF 482581 (R$3.130,95) foi liquidada dividida entre os empenhos 8223 e 8225. As NFs 452740, 452746, 482579 e 482581 ainda nao foram recebidas para classificacao na aba Veiculos. O campo Saldo corresponde ao valor 'A liquidar' de cada empenho, conforme consta no relatorio oficial (Empenhado - Liquidado - Anulado - Em liquidacao).",
+ "atualizadoEm": "2026-08-31T13:09:00-03:00",
+ "observacao": "Dados extraidos do relatorio de Movimentacoes de Empenhos do e-Publica (emissao 31/08/2026), contendo os 19 empenhos do fornecedor para a unidade 2006. Notas fiscais compartilhadas entre mais de um empenho (408261, 408262, 452740 e 482581) tem o valor de face total indicado no campo da nota, com o valor efetivamente aplicado a cada empenho no valor da movimentacao. NF 452740 (R$5.396,46) foi liquidada dividida entre os empenhos 8157, 8158 e 8223. NF 482581 (R$3.130,95) foi liquidada dividida entre os empenhos 8223 e 8225. As NFs 452740, 452746, 482579 e 482581 ainda nao foram recebidas para classificacao na aba Veiculos. O campo Saldo corresponde ao valor 'A liquidar' de cada empenho, conforme consta no relatorio oficial (Empenhado - Liquidado - Anulado - Em liquidacao). Correcao: NF do empenho 203/2026 (sequencia 9674945) corrigida de 395946 para 395846 (erro de digitacao no relatorio anterior).",
  "empenhos": [
   {
    "numero": "202/2026",
@@ -110,7 +110,7 @@
      "valor": 924.91,
      "notasFiscais": [
       {
-       "numero": "395946",
+       "numero": "395846",
        "data": "2026-02-01",
        "valor": 924.91
       }
@@ -680,4 +680,4 @@
    "aLiquidar": 2207.26
   }
  ]
-}
+  }
