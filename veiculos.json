@@ -100,10 +100,184 @@
      "tipo": "servico",
      "valor": 500.0,
      "descricao": "SERVICO DE INSPECAO VEICULAR - LAUDO SIE - VEICULO PLACAS: RXR1H38"
+    },
+    {
+     "data": "2026-08-04",
+     "oficina": "AUTO COLETIVO CACADOR LTDA",
+     "grupo": "1059684",
+     "tipo": "produto",
+     "valor": 30758.74,
+     "descricao": "ABRACADEIRA PLASTICA 40C; ADAPTADOR COLUNA DIRECAO; ADITIVO RADIADOR CONCENTRADO; AGUA DESMINERALIZADA; CABO FLEXIVEL 2X1,0MM; CAMPAINHA PAINEL; CANECA CLIP P/ MANGUEIRA 12MM; CAPA BANCO PREFERENCIAL; CAPA TERMINAL ENCAIXE FEMEA; CAPA TERMINAL ENCAIXE FEMEA (2); CHAVE DIRECIONAL VOLARE; CJ PATIM FREIO VOLARE CINCO (2un); COIFA COLUNA DIRECAO VOLARE; COLUNA DIRECAO INFERIOR; COLUNA DIRECAO SUPERIOR; CONEXAO EMENDA ESPIGA AR; CORREIA 13X1595; CORREIA MOTOR MBB O500; DESENGRIPANTE 300ML; FLEXIVEL AR CONDICIONADO; FUSIVEL 150 AH; GAS AR CONDICIONADO R134A (1,5kg); INTERRUPTOR CAMPAINHA PAINEL; KIT ANEL ELASTICO EXTERNO; LAMPADA 53 24V; LANTERNA LUZ PLACA LED; MANGUEIRA AR CONDICIONADO; MECANISMO LIMPADOR PARABRISA; NUCLEO VALVULA SCHRADER; PARAFUSO 10X70 MA; PRESSOSTATO AR CONDICIONADO; PRESSOSTATO AR CONDICIONADO (2); PROTETOR BORRACHA COLUNA DIRECAO; ROLAMENTO COLUNA DIRECAO; TAMPA RADIADOR; TAPA FUGAS AR CONDICIONADO (VASO EXPANSOR); TERMINAL ENCAIXE IM2182 (6un); TERMINAL ESPADAO ETE 703 (2un); VIGIA LUZ OLEO ETE7063",
+     "itens": [
+      {
+       "descricao": "ABRACADEIRA PLASTICA 40C",
+       "valor": 19.9
+      },
+      {
+       "descricao": "ADAPTADOR COLUNA DIRECAO",
+       "valor": 249.97
+      },
+      {
+       "descricao": "ADITIVO RADIADOR CONCENTRADO",
+       "valor": 89.98
+      },
+      {
+       "descricao": "AGUA DESMINERALIZADA",
+       "valor": 10.99
+      },
+      {
+       "descricao": "CABO FLEXIVEL 2X1,0MM",
+       "valor": 34.72
+      },
+      {
+       "descricao": "CAMPAINHA PAINEL",
+       "valor": 62.93
+      },
+      {
+       "descricao": "CANECA CLIP P/ MANGUEIRA 12MM",
+       "valor": 39.9
+      },
+      {
+       "descricao": "CAPA BANCO PREFERENCIAL",
+       "valor": 159.8
+      },
+      {
+       "descricao": "CAPA TERMINAL ENCAIXE FEMEA",
+       "valor": 9.98
+      },
+      {
+       "descricao": "CAPA TERMINAL ENCAIXE FEMEA (2)",
+       "valor": 7.96
+      },
+      {
+       "descricao": "CHAVE DIRECIONAL VOLARE",
+       "valor": 5350.0
+      },
+      {
+       "descricao": "CJ PATIM FREIO VOLARE CINCO (2un)",
+       "valor": 3251.08
+      },
+      {
+       "descricao": "COIFA COLUNA DIRECAO VOLARE",
+       "valor": 250.48
+      },
+      {
+       "descricao": "COLUNA DIRECAO INFERIOR",
+       "valor": 6980.49
+      },
+      {
+       "descricao": "COLUNA DIRECAO SUPERIOR",
+       "valor": 6350.0
+      },
+      {
+       "descricao": "CONEXAO EMENDA ESPIGA AR",
+       "valor": 42.44
+      },
+      {
+       "descricao": "CORREIA 13X1595",
+       "valor": 319.8
+      },
+      {
+       "descricao": "CORREIA MOTOR MBB O500",
+       "valor": 175.1
+      },
+      {
+       "descricao": "DESENGRIPANTE 300ML",
+       "valor": 12.9
+      },
+      {
+       "descricao": "FLEXIVEL AR CONDICIONADO",
+       "valor": 445.47
+      },
+      {
+       "descricao": "FUSIVEL 150 AH",
+       "valor": 48.75
+      },
+      {
+       "descricao": "GAS AR CONDICIONADO R134A (1,5kg)",
+       "valor": 719.93
+      },
+      {
+       "descricao": "INTERRUPTOR CAMPAINHA PAINEL",
+       "valor": 24.52
+      },
+      {
+       "descricao": "KIT ANEL ELASTICO EXTERNO",
+       "valor": 6.75
+      },
+      {
+       "descricao": "LAMPADA 53 24V",
+       "valor": 5.98
+      },
+      {
+       "descricao": "LANTERNA LUZ PLACA LED",
+       "valor": 24.9
+      },
+      {
+       "descricao": "MANGUEIRA AR CONDICIONADO",
+       "valor": 188.82
+      },
+      {
+       "descricao": "MECANISMO LIMPADOR PARABRISA",
+       "valor": 3690.0
+      },
+      {
+       "descricao": "NUCLEO VALVULA SCHRADER",
+       "valor": 69.9
+      },
+      {
+       "descricao": "PARAFUSO 10X70 MA",
+       "valor": 5.56
+      },
+      {
+       "descricao": "PRESSOSTATO AR CONDICIONADO",
+       "valor": 456.92
+      },
+      {
+       "descricao": "PRESSOSTATO AR CONDICIONADO (2)",
+       "valor": 594.84
+      },
+      {
+       "descricao": "PROTETOR BORRACHA COLUNA DIRECAO",
+       "valor": 198.9
+      },
+      {
+       "descricao": "ROLAMENTO COLUNA DIRECAO",
+       "valor": 390.94
+      },
+      {
+       "descricao": "TAMPA RADIADOR",
+       "valor": 59.3
+      },
+      {
+       "descricao": "TAPA FUGAS AR CONDICIONADO (VASO EXPANSOR)",
+       "valor": 368.0
+      },
+      {
+       "descricao": "TERMINAL ENCAIXE IM2182 (6un)",
+       "valor": 12.96
+      },
+      {
+       "descricao": "TERMINAL ESPADAO ETE 703 (2un)",
+       "valor": 3.98
+      },
+      {
+       "descricao": "VIGIA LUZ OLEO ETE7063",
+       "valor": 23.9
+      }
+     ]
+    },
+    {
+     "data": "2026-08-04",
+     "oficina": "AUTO COLETIVO CACADOR LTDA",
+     "grupo": "1059684",
+     "tipo": "servico",
+     "valor": 7980.0,
+     "descricao": "MAO DE OBRA ELETRICA / CONSERTO E AFERICAO TACOGRAFO / MAO DE OBRA ELETRICA / INSTALADO KIT ACESSIBILIDADE / SUBSTITUIDO CHAVE DIRECIONAL ORIGINAL VOLARE / REVISADO ELETRICA GERAL PARA VISTORIA / MAO DE OBRA ELETRICA-ELETRONICA / REVISAR SISTEMA AR CONDICIONADO / TESTADO E TROCADO PRESSOSTATOS AR CONDICIONADO / FEITO TESTE PRESSAO E LIMPEZA SISTEMA AR CONDICIONADO / TR. MANGUEIRA E CLIPADO E TROCADO FLEXIVEL AR CONDICIONADO E REPOSTO GAS R134A / MAO DE OBRA - SERVICO DE TORNO DESMONTAR EMBUCHAR E MONTAR BARRA DIRECAO / MAO DE OBRA MECANICA / REMOVER AJUSTAR E TR. MECANISMO LIMPADOR PARABRISA / REMOVER AJUSTAR E TR. COLUNAS DIRECAO SUPERIOR E INFERIOR E AGREGADOS / TROCADO CJ. PATIM DE FREIO TRASEIRO VOLARE L.E/L.D / SUBSTITUIDO COIFA COLUNA DIRECAO - REF. O.S:24609"
     }
    ],
-   "totalGasto": 20271.52,
-   "qtdServicos": 7
+   "totalGasto": 59010.26,
+   "qtdServicos": 9
   },
   {
    "placa": "QIJ1629",
@@ -601,10 +775,64 @@
      "tipo": "servico",
      "valor": 39.2,
      "descricao": "INSTALACAO DE SENSOR NO FAROL PARA ABERTURA DE PORTAO - CONFORME ORCAMENTO 1092006"
+    },
+    {
+     "data": "2026-07-27",
+     "oficina": "MECANICA MEZALIRA",
+     "grupo": "1050997",
+     "tipo": "produto",
+     "valor": 2426.0,
+     "descricao": "REGULADOR DE VOLTAGEM DO ALTERNADOR; POLIA DO ALTERNADOR; ABRACADEIRA; INTERRUPTOR DA LUZ DE EMERGENCIA; SOLUCAO DESENGRAXANTE; BATERIA 60AMP ERBS; CORREIA ALTERNADOR; CILINDRO MESTRE DE FREIO; FLUIDO DE FREIO",
+     "itens": [
+      {
+       "descricao": "REGULADOR DE VOLTAGEM DO ALTERNADOR",
+       "valor": 356.0
+      },
+      {
+       "descricao": "POLIA DO ALTERNADOR",
+       "valor": 290.0
+      },
+      {
+       "descricao": "ABRACADEIRA",
+       "valor": 12.0
+      },
+      {
+       "descricao": "INTERRUPTOR DA LUZ DE EMERGENCIA",
+       "valor": 265.0
+      },
+      {
+       "descricao": "SOLUCAO DESENGRAXANTE",
+       "valor": 70.0
+      },
+      {
+       "descricao": "BATERIA 60AMP ERBS",
+       "valor": 580.0
+      },
+      {
+       "descricao": "CORREIA ALTERNADOR",
+       "valor": 145.0
+      },
+      {
+       "descricao": "CILINDRO MESTRE DE FREIO",
+       "valor": 590.0
+      },
+      {
+       "descricao": "FLUIDO DE FREIO",
+       "valor": 118.0
+      }
+     ]
+    },
+    {
+     "data": "2026-07-27",
+     "oficina": "MECANICA MEZALIRA",
+     "grupo": "1050997",
+     "tipo": "servico",
+     "valor": 890.0,
+     "descricao": "MAO DE OBRA MECANICA - REF. DAV-OS: 017829"
     }
    ],
-   "totalGasto": 1689.2,
-   "qtdServicos": 3
+   "totalGasto": 5005.2,
+   "qtdServicos": 5
   },
   {
    "placa": "MHO7933",
@@ -659,7 +887,7 @@
    "descricao": "Nota fiscal pendente de classificacao (adicionada automaticamente)"
   }
  ],
- "totalGeral": 51019.97,
- "observacao": "Notas fiscais de produto (pecas) e servico (mao de obra) sao exibidas separadamente por Nota Fiscal (NF). NF 1007369 (TECNICAR, R$9.320,00) e NF 911924 (R$39,20) foram associadas as placas QIJ1629 e QIF4649 conforme confirmacao da responsavel. NFs 482579 (R$2.299,77) e 482581 (R$3.130,95) aguardam classificacao manual pela Raphaella.",
- "atualizadoEm": "2026-08-24T14:10:00-03:00"
-}
+ "totalGeral": 93074.71,
+ "observacao": "Notas fiscais de produto (pecas) e servico (mao de obra) sao exibidas separadamente por Nota Fiscal (NF). NF 1007369 (TECNICAR, R$9.320,00) e NF 911924 (R$39,20) foram associadas as placas QIJ1629 e QIF4649 conforme confirmacao da responsavel. NFs 482579 (R$2.299,77) e 482581 (R$3.130,95) aguardam classificacao manual pela Raphaella. Adicionados os servicos do pedido 1050997 (QIF4649, MECANICA MEZALIRA, pecas R$2.426,00 + mao de obra R$890,00, NF-e 000006322 e NFSe 000000546 de 27/07/2026) e do pedido 1059684 (RXR1H38, CASA DO ONIBUS/AUTO COLETIVO CACADOR LTDA, pecas R$30.758,74 + mao de obra R$7.980,00, NF-e 000022866 e NFS-e 621 de 04/08/2026), conforme notas fiscais e nota de gestao MaxiFrota recebidas em 02-03/09/2026. Essas cobrancas ainda nao apareciam no relatorio de Movimentacao de Empenhos do e-Publica ate 31/08/2026.",
+ "atualizadoEm": "2026-09-03T00:00:00-03:00"
+      }
