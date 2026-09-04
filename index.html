@@ -74,6 +74,40 @@
     margin: 22px 0 10px;
     color: var(--azul);
   }
+  .filtros {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    background: white;
+    border: 1px solid var(--borda);
+    border-radius: 10px;
+    padding: 10px 12px;
+    margin-bottom: 14px;
+    font-size: 0.8rem;
+  }
+  .filtro-grupo { display: flex; gap: 4px; }
+  .filtro-btn {
+    background: #f1f5f9;
+    border: 1px solid var(--borda);
+    color: var(--cinza);
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .filtro-btn.ativo { background: var(--azul); color: white; border-color: var(--azul); }
+  .filtro-check {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #1f2937;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .filtro-check input { width: 15px; height: 15px; cursor: pointer; }
+  .filtro-contagem { margin-left: auto; color: var(--cinza); font-size: 0.75rem; }
   .empenho, .veiculo {
     background: white;
     border: 1px solid var(--borda);
@@ -101,6 +135,8 @@
   .tag.servico { background: #fdf1e6; color: var(--laranja); }
   .tag.produto { background: #eafaf1; color: var(--verde); }
   .tag.pendente { background: #fee2e2; color: #b91c1c; }
+  .tag.saldo { background: #eafaf1; color: var(--verde); }
+  .tag.semsaldo { background: #f1f5f9; color: var(--cinza); }
   .item-lista { margin: 0; padding-left: 16px; color: var(--cinza); font-size: 0.75rem; }
   .item-lista li { margin: 1px 0; }
   .empenho-resumo, .veiculo-resumo { font-size: 0.78rem; color: var(--cinza); }
@@ -116,6 +152,15 @@
     border-radius: 6px;
     padding: 3px 8px;
     font-size: 0.72rem;
+  }
+  .sem-resultado {
+    background: white;
+    border: 1px dashed var(--borda);
+    border-radius: 10px;
+    padding: 16px;
+    text-align: center;
+    color: var(--cinza);
+    font-size: 0.82rem;
   }
   .pendente-item {
     background: white;
@@ -147,6 +192,18 @@
     <div class="aviso" id="aviso" style="display:none;"></div>
     <div class="cards" id="cards"></div>
     <div class="secao-titulo">Empenhos e notas fiscais</div>
+    <div class="filtros" id="filtros-empenhos" style="display:none;">
+      <div class="filtro-grupo">
+        <button class="filtro-btn ativo" data-classe="todos" onclick="setFiltroClasse('todos')">Todos</button>
+        <button class="filtro-btn" data-classe="material" onclick="setFiltroClasse('material')">Material</button>
+        <button class="filtro-btn" data-classe="servico" onclick="setFiltroClasse('servico')">Servico</button>
+      </div>
+      <label class="filtro-check">
+        <input type="checkbox" id="check-saldo" onchange="setFiltroSaldo(this.checked)">
+        Somente com saldo a liquidar
+      </label>
+      <div class="filtro-contagem" id="filtro-contagem"></div>
+    </div>
     <div id="lista-empenhos"></div>
   </div>
 
@@ -187,6 +244,87 @@ function mudarAba(nome) {
   document.getElementById('tab-veiculos').classList.toggle('ativa', nome === 'veiculos');
 }
 
+let todosEmpenhos = [];
+let filtroClasse = 'todos';
+let filtroSaldo = false;
+
+function setFiltroClasse(c) {
+  filtroClasse = c;
+  document.querySelectorAll('.filtro-btn').forEach(function(b) {
+    b.classList.toggle('ativo', b.dataset.classe === c);
+  });
+  renderEmpenhos();
+}
+
+function setFiltroSaldo(v) {
+  filtroSaldo = v;
+  renderEmpenhos();
+}
+
+function renderEmpenhos() {
+  const listaEl = document.getElementById('lista-empenhos');
+  listaEl.innerHTML = '';
+  let visiveis = 0;
+
+  todosEmpenhos.forEach(function(emp) {
+    const classe = emp.classificacao || classificar(emp.elementoCodigo, emp.elementoNome);
+    const gasto = emp.movimentacoes
+      .filter(function(m) { return m.tipo.startsWith('Liquida'); })
+      .reduce(function(s, m) { return s + m.valor; }, 0);
+    const saldo = typeof emp.aLiquidar === 'number' ? emp.aLiquidar : (emp.valorEmpenhado - gasto);
+    const temSaldo = saldo > 0.005;
+
+    if (filtroClasse !== 'todos' && classe !== filtroClasse) return;
+    if (filtroSaldo && !temSaldo) return;
+    visiveis++;
+
+    const notas = new Map();
+    emp.movimentacoes.forEach(function(m) {
+      (m.notasFiscais || []).forEach(function(nf) { notas.set(nf.numero, nf); });
+    });
+
+    const div = document.createElement('div');
+    div.className = 'empenho';
+
+    div.innerHTML =
+      '<div class="empenho-cab" onclick="this.parentElement.classList.toggle(&quot;aberto&quot;)">' +
+      '<div><div class="titulo">Empenho ' + emp.numero + ' <span class="tag ' + classe + '">' +
+      (classe === 'material' ? 'Material' : classe === 'servico' ? 'Servico' : 'Outro') +
+      '</span> <span class="tag ' + (temSaldo ? 'saldo' : 'semsaldo') + '">' +
+      (temSaldo ? 'Com saldo' : 'Sem saldo') + '</span></div>' +
+      '<div class="empenho-resumo">' + emp.especie + ' - ' + emp.elementoCodigo + ' - ' + emp.elementoNome +
+      ' - Empenhado ' + moeda(emp.valorEmpenhado) + ' - Gasto ' + moeda(gasto) + ' - Saldo (a liquidar) ' + moeda(saldo) + '</div></div>' +
+      '<span class="seta">v</span></div>' +
+      '<div class="empenho-corpo">' +
+      '<div><strong>Despesa:</strong> ' + (emp.despesa || '-') + '</div>' +
+      '<div><strong>Fonte de recurso:</strong> ' + (emp.fonteRecurso || '-') + '</div>' +
+      '<div><strong>Saldo (a liquidar):</strong> ' + moeda(saldo) + '</div>' +
+      '<div style="margin-top:6px;"><strong>Objeto:</strong> ' + (emp.objetoResumido || '-') + '</div>' +
+      '<table><thead><tr><th>Data</th><th>Tipo</th><th>Valor</th></tr></thead><tbody>' +
+      emp.movimentacoes.map(function(m) {
+        return '<tr><td>' + dataBr(m.data) + '</td><td>' + m.tipo + '</td><td>' + moeda(m.valor) + '</td></tr>';
+      }).join('') +
+      '</tbody></table>' +
+      '<div style="margin-top:8px;"><strong>Notas fiscais vinculadas:</strong></div>' +
+      '<div class="nf-lista">' +
+      ([...notas.values()].map(function(nf) {
+        return '<span class="nf-chip">NF ' + nf.numero + ' - ' + dataBr(nf.data) + ' - ' + moeda(nf.valor) + '</span>';
+      }).join('') || '<span class="nf-chip">Nenhuma</span>') +
+      '</div></div>';
+
+    listaEl.appendChild(div);
+  });
+
+  if (visiveis === 0) {
+    listaEl.innerHTML = '<div class="sem-resultado">Nenhum empenho encontrado para este filtro.</div>';
+  }
+
+  const contagemEl = document.getElementById('filtro-contagem');
+  if (contagemEl) {
+    contagemEl.textContent = visiveis + ' de ' + todosEmpenhos.length + ' empenho(s) exibido(s)';
+  }
+}
+
 fetch('./data.json')
   .then(r => r.json())
   .then(dados => {
@@ -208,14 +346,13 @@ fetch('./data.json')
       servico: { empenhado: 0, gasto: 0, saldo: 0 }
     };
 
-    const listaEl = document.getElementById('lista-empenhos');
+    todosEmpenhos = dados.empenhos;
 
-    dados.empenhos.forEach(emp => {
+    todosEmpenhos.forEach(function(emp) {
       const classe = emp.classificacao || classificar(emp.elementoCodigo, emp.elementoNome);
       const gasto = emp.movimentacoes
-        .filter(m => m.tipo.startsWith('Liquida'))
-        .reduce((s, m) => s + m.valor, 0);
-
+        .filter(function(m) { return m.tipo.startsWith('Liquida'); })
+        .reduce(function(s, m) { return s + m.valor; }, 0);
       const saldo = typeof emp.aLiquidar === 'number' ? emp.aLiquidar : (emp.valorEmpenhado - gasto);
 
       if (totais[classe]) {
@@ -223,42 +360,10 @@ fetch('./data.json')
         totais[classe].gasto += gasto;
         totais[classe].saldo += saldo;
       }
-
-      const notas = new Map();
-      emp.movimentacoes.forEach(m => (m.notasFiscais || []).forEach(nf => {
-        notas.set(nf.numero, nf);
-      }));
-
-      const div = document.createElement('div');
-      div.className = 'empenho';
-
-      div.innerHTML =
-        '<div class="empenho-cab" onclick="this.parentElement.classList.toggle(&quot;aberto&quot;)">' +
-        '<div><div class="titulo">Empenho ' + emp.numero + ' <span class="tag ' + classe + '">' +
-        (classe === 'material' ? 'Material' : classe === 'servico' ? 'Servico' : 'Outro') +
-        '</span></div>' +
-        '<div class="empenho-resumo">' + emp.especie + ' - ' + emp.elementoCodigo + ' - ' + emp.elementoNome +
-        ' - Empenhado ' + moeda(emp.valorEmpenhado) + ' - Gasto ' + moeda(gasto) + ' - Saldo (a liquidar) ' + moeda(saldo) + '</div></div>' +
-        '<span class="seta">v</span></div>' +
-        '<div class="empenho-corpo">' +
-        '<div><strong>Despesa:</strong> ' + (emp.despesa || '-') + '</div>' +
-        '<div><strong>Fonte de recurso:</strong> ' + (emp.fonteRecurso || '-') + '</div>' +
-        '<div><strong>Saldo (a liquidar):</strong> ' + moeda(saldo) + '</div>' +
-        '<div style="margin-top:6px;"><strong>Objeto:</strong> ' + (emp.objetoResumido || '-') + '</div>' +
-        '<table><thead><tr><th>Data</th><th>Tipo</th><th>Valor</th></tr></thead><tbody>' +
-        emp.movimentacoes.map(function(m) {
-          return '<tr><td>' + dataBr(m.data) + '</td><td>' + m.tipo + '</td><td>' + moeda(m.valor) + '</td></tr>';
-        }).join('') +
-        '</tbody></table>' +
-        '<div style="margin-top:8px;"><strong>Notas fiscais vinculadas:</strong></div>' +
-        '<div class="nf-lista">' +
-        ([...notas.values()].map(function(nf) {
-          return '<span class="nf-chip">NF ' + nf.numero + ' - ' + dataBr(nf.data) + ' - ' + moeda(nf.valor) + '</span>';
-        }).join('') || '<span class="nf-chip">Nenhuma</span>') +
-        '</div></div>';
-
-      listaEl.appendChild(div);
     });
+
+    document.getElementById('filtros-empenhos').style.display = 'flex';
+    renderEmpenhos();
 
     const cardsEl = document.getElementById('cards');
     const linhas = [
