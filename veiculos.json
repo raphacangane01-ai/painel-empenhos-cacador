@@ -274,10 +274,26 @@
      "tipo": "servico",
      "valor": 7980,
      "descricao": "MAO DE OBRA ELETRICA / CONSERTO E AFERICAO TACOGRAFO / MAO DE OBRA ELETRICA / INSTALADO KIT ACESSIBILIDADE / SUBSTITUIDO CHAVE DIRECIONAL ORIGINAL VOLARE / REVISADO ELETRICA GERAL PARA VISTORIA / MAO DE OBRA ELETRICA-ELETRONICA / REVISAR SISTEMA AR CONDICIONADO / TESTADO E TROCADO PRESSOSTATOS AR CONDICIONADO / FEITO TESTE PRESSAO E LIMPEZA SISTEMA AR CONDICIONADO / TR. MANGUEIRA E CLIPADO E TROCADO FLEXIVEL AR CONDICIONADO E REPOSTO GAS R134A / MAO DE OBRA - SERVICO DE TORNO DESMONTAR EMBUCHAR E MONTAR BARRA DIRECAO / MAO DE OBRA MECANICA / REMOVER AJUSTAR E TR. MECANISMO LIMPADOR PARABRISA / REMOVER AJUSTAR E TR. COLUNAS DIRECAO SUPERIOR E INFERIOR E AGREGADOS / TROCADO CJ. PATIM DE FREIO TRASEIRO VOLARE L.E/L.D / SUBSTITUIDO COIFA COLUNA DIRECAO - REF. O.S:24609"
+    },
+    {
+     "data": "2026-09-29",
+     "oficina": "LUAN MARIN VERONESE - MV ELETROMECANICA",
+     "grupo": "1084567",
+     "tipo": "produto",
+     "valor": 50,
+     "descricao": "TERMINAL DE SAPATA; INTERRUPTOR FREIO (NF-e 692 de 29/09/2026)"
+    },
+    {
+     "data": "2026-09-29",
+     "oficina": "LUAN MARIN VERONESE - MV ELETROMECANICA",
+     "grupo": "1084567",
+     "tipo": "servico",
+     "valor": 800,
+     "descricao": "MAO DE OBRA (NFS-e 74 de 29/09/2026)"
     }
    ],
-   "totalGasto": 59010.26,
-   "qtdServicos": 9
+   "totalGasto": 59860.26,
+   "qtdServicos": 11
   },
   {
    "placa": "QIJ1629",
@@ -893,23 +909,9 @@
    "valor": 3130.95,
    "oficina": null,
    "descricao": "Nota fiscal pendente de classificacao (adicionada automaticamente)"
-  },
-  {
-   "data": "2026-09-29",
-   "grupo": "1084567",
-   "valor": 50,
-   "oficina": "LUAN MARIN VERONESE - MV ELETROMECANICA",
-   "descricao": "Pedido 1084567 - pecas (NF-e 692 de 29/09/2026): terminal de sapata R$35,00; interruptor freio R$15,00. Placa nao informada nas notas - pendente de classificacao."
-  },
-  {
-   "data": "2026-09-29",
-   "grupo": "1084567",
-   "valor": 800,
-   "oficina": "LUAN MARIN VERONESE - MV ELETROMECANICA",
-   "descricao": "Pedido 1084567 - mao de obra (NFS-e 74 de 29/09/2026). Placa nao informada nas notas - pendente de classificacao."
   }
  ],
- "totalGeral": 94154.71,
- "observacao": "Notas fiscais de produto (pecas) e servico (mao de obra) sao exibidas separadamente por Nota Fiscal (NF). NF 1007369 (TECNICAR, R$9.320,00) e NF 911924 (R$39,20) foram associadas as placas QIJ1629 e QIF4649 conforme confirmacao da responsavel. NFs 482579 (R$2.299,77) e 482581 (R$3.130,95) aguardam classificacao manual pela Raphaella. Adicionados os servicos do pedido 1050997 (QIF4649, MECANICA MEZALIRA, pecas R$2.426,00 + mao de obra R$890,00, NF-e 000006322 e NFSe 000000546 de 27/07/2026) e do pedido 1059684 (RXR1H38, CASA DO ONIBUS/AUTO COLETIVO CACADOR LTDA, pecas R$30.758,74 + mao de obra R$7.980,00, NF-e 000022866 e NFS-e 621 de 04/08/2026), conforme notas fiscais e nota de gestao MaxiFrota recebidas em 02-03/09/2026. Essas cobrancas ainda nao apareciam no relatorio de Movimentacao de Empenhos do e-Publica ate 31/08/2026. Em 05/10/2026: adicionado o servico do pedido 1067112 (RAG9A13, AUTO COLETIVO CACADOR LTDA, mao de obra R$1.080,00, NFS-e 676 de 24/08/2026, O.S. 25702); pecas desse pedido nao foram enviadas. Pedido 1084567 (MV ELETROMECANICA: pecas R$50,00 NF-e 692 + mao de obra R$800,00 NFS-e 74, de 29/09/2026) aguarda classificacao manual pela Raphaella, pois as notas nao trazem a placa. Notas de gestao MaxiFrota (Nota Salvador 513373 de R$1.048,35 e 513374 de R$1.879,81, emitidas em 01/10/2026, competencia 09/2026) recebidas e registradas apenas nesta observacao.",
- "atualizadoEm": "2026-10-05T16:40:00-03:00"
-}
+ "totalGeral": 95004.71,
+ "observacao": "Notas fiscais de produto (pecas) e servico (mao de obra) sao exibidas separadamente por Nota Fiscal (NF). NF 1007369 (TECNICAR, R$9.320,00) e NF 911924 (R$39,20) foram associadas as placas QIJ1629 e QIF4649 conforme confirmacao da responsavel. NFs 482579 (R$2.299,77) e 482581 (R$3.130,95) aguardam classificacao manual pela Raphaella. Adicionados os servicos do pedido 1050997 (QIF4649, MECANICA MEZALIRA, pecas R$2.426,00 + mao de obra R$890,00, NF-e 000006322 e NFSe 000000546 de 27/07/2026) e do pedido 1059684 (RXR1H38, CASA DO ONIBUS/AUTO COLETIVO CACADOR LTDA, pecas R$30.758,74 + mao de obra R$7.980,00, NF-e 000022866 e NFS-e 621 de 04/08/2026), conforme notas fiscais e nota de gestao MaxiFrota recebidas em 02-03/09/2026. Essas cobrancas ainda nao apareciam no relatorio de Movimentacao de Empenhos do e-Publica ate 31/08/2026. Em 05/10/2026: adicionado o servico do pedido 1067112 (RAG9A13, AUTO COLETIVO CACADOR LTDA, mao de obra R$1.080,00, NFS-e 676 de 24/08/2026, O.S. 25702); pecas desse pedido nao foram enviadas. Adicionado o pedido 1084567 (RXR1H38, MV ELETROMECANICA: pecas R$50,00 NF-e 692 + mao de obra R$800,00 NFS-e 74, de 29/09/2026), conforme informado pela Raphaella.",
+ "atualizadoEm": "2026-10-05T17:10:00-03:00"
+    }
