@@ -644,10 +644,26 @@
      "tipo": "servico",
      "valor": 1080,
      "descricao": "MAO DE OBRA ELETRICA/ELETRONICA / CONSERTO SISTEMA ELETRICO AR CONDICIONADO; MAO DE OBRA MECANICA / CONSERTO E AJUSTE PORTA (NFS-e 676 de 24/08/2026, O.S. 25702)"
+    },
+    {
+     "data": "2026-09-01",
+     "oficina": "NAO INFORMADA (NF MAXIFROTA)",
+     "grupo": "494975",
+     "tipo": "produto",
+     "valor": 30755.66,
+     "descricao": "NF 494975 - classificada para a placa RAG9A13 conforme informado pela Raphaella (sem detalhamento da oficina)."
+    },
+    {
+     "data": "2026-09-01",
+     "oficina": "NAO INFORMADA (NF MAXIFROTA)",
+     "grupo": "494980",
+     "tipo": "servico",
+     "valor": 7979.2,
+     "descricao": "NF 494980 - classificada para a placa RAG9A13 conforme informado pela Raphaella (sem detalhamento da oficina)."
     }
    ],
-   "totalGasto": 10303.66,
-   "qtdServicos": 12
+   "totalGasto": 49038.52,
+   "qtdServicos": 14
   },
   {
    "placa": "SXT4A29",
@@ -869,10 +885,18 @@
      "tipo": "servico",
      "valor": 890,
      "descricao": "MAO DE OBRA MECANICA - REF. DAV-OS: 017829"
+    },
+    {
+     "data": "2026-09-01",
+     "oficina": "NAO INFORMADA (NF MAXIFROTA)",
+     "grupo": "497433",
+     "tipo": "servico",
+     "valor": 889.91,
+     "descricao": "NF 497433 - classificada para a placa QIF4649 conforme informado pela Raphaella (sem detalhamento da oficina)."
     }
    ],
-   "totalGasto": 5005.2,
-   "qtdServicos": 5
+   "totalGasto": 5895.11,
+   "qtdServicos": 6
   },
   {
    "placa": "MHO7933",
@@ -911,30 +935,8 @@
    "qtdServicos": 1
   }
  ],
- "semVeiculo": [
-  {
-   "data": "2026-09-01",
-   "grupo": "494975",
-   "valor": 30755.66,
-   "oficina": null,
-   "descricao": "Nota fiscal pendente de classificacao (adicionada automaticamente)"
-  },
-  {
-   "data": "2026-09-01",
-   "grupo": "494980",
-   "valor": 7979.2,
-   "oficina": null,
-   "descricao": "Nota fiscal pendente de classificacao (adicionada automaticamente)"
-  },
-  {
-   "data": "2026-09-01",
-   "grupo": "497433",
-   "valor": 889.91,
-   "oficina": null,
-   "descricao": "Nota fiscal pendente de classificacao (adicionada automaticamente)"
-  }
- ],
- "totalGeral": 100435.43,
- "observacao": "Notas fiscais de produto (pecas) e servico (mao de obra) sao exibidas separadamente por Nota Fiscal (NF). NF 1007369 (TECNICAR, R$9.320,00) e NF 911924 (R$39,20) foram associadas as placas QIJ1629 e QIF4649 conforme confirmacao da responsavel. NFs 482579 (R$2.299,77) e 482581 (R$3.130,95) classificadas para RXR1H38 em 05/10/2026 conforme a Raphaella. Adicionados os servicos do pedido 1050997 (QIF4649, MECANICA MEZALIRA, pecas R$2.426,00 + mao de obra R$890,00, NF-e 000006322 e NFSe 000000546 de 27/07/2026) e do pedido 1059684 (RXR1H38, CASA DO ONIBUS/AUTO COLETIVO CACADOR LTDA, pecas R$30.758,74 + mao de obra R$7.980,00, NF-e 000022866 e NFS-e 621 de 04/08/2026), conforme notas fiscais e nota de gestao MaxiFrota recebidas em 02-03/09/2026. Essas cobrancas ainda nao apareciam no relatorio de Movimentacao de Empenhos do e-Publica ate 31/08/2026. Em 05/10/2026: adicionado o servico do pedido 1067112 (RAG9A13, AUTO COLETIVO CACADOR LTDA, mao de obra R$1.080,00, NFS-e 676 de 24/08/2026, O.S. 25702); pecas desse pedido nao foram enviadas. Adicionado o pedido 1084567 (RXR1H38, MV ELETROMECANICA: pecas R$50,00 NF-e 692 + mao de obra R$800,00 NFS-e 74, de 29/09/2026), conforme informado pela Raphaella. NFs 494975 (R$30.755,66), 494980 (R$7.979,20) e 497433 (R$889,91), liquidadas em 05/10/2026, aguardam classificacao manual pela Raphaella.",
- "atualizadoEm": "2026-10-06T13:15:00-03:00"
-}
+ "semVeiculo": [],
+ "totalGeral": 140060.2,
+ "observacao": "Notas fiscais de produto (pecas) e servico (mao de obra) sao exibidas separadamente por Nota Fiscal (NF). NF 1007369 (TECNICAR, R$9.320,00) e NF 911924 (R$39,20) foram associadas as placas QIJ1629 e QIF4649 conforme confirmacao da responsavel. NFs 482579 (R$2.299,77) e 482581 (R$3.130,95) classificadas para RXR1H38 em 05/10/2026 conforme a Raphaella. Adicionados os servicos do pedido 1050997 (QIF4649, MECANICA MEZALIRA, pecas R$2.426,00 + mao de obra R$890,00, NF-e 000006322 e NFSe 000000546 de 27/07/2026) e do pedido 1059684 (RXR1H38, CASA DO ONIBUS/AUTO COLETIVO CACADOR LTDA, pecas R$30.758,74 + mao de obra R$7.980,00, NF-e 000022866 e NFS-e 621 de 04/08/2026), conforme notas fiscais e nota de gestao MaxiFrota recebidas em 02-03/09/2026. Essas cobrancas ainda nao apareciam no relatorio de Movimentacao de Empenhos do e-Publica ate 31/08/2026. Em 05/10/2026: adicionado o servico do pedido 1067112 (RAG9A13, AUTO COLETIVO CACADOR LTDA, mao de obra R$1.080,00, NFS-e 676 de 24/08/2026, O.S. 25702); pecas desse pedido nao foram enviadas. Adicionado o pedido 1084567 (RXR1H38, MV ELETROMECANICA: pecas R$50,00 NF-e 692 + mao de obra R$800,00 NFS-e 74, de 29/09/2026), conforme informado pela Raphaella. NFs 494975 (R$30.755,66) e 494980 (R$7.979,20) classificadas para RAG9A13 e NF 497433 (R$889,91) para QIF4649 em 06/10/2026, conforme a Raphaella.",
+ "atualizadoEm": "2026-10-06T14:00:00-03:00"
+      }
