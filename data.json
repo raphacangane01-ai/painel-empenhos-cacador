@@ -5,8 +5,8 @@
   },
   "unidadeOrcamentaria": "2006 - SECRETARIA DE ESPORTES E LAZER",
   "orgaoOrcamentario": "2000 - CHEFIA DO EXECUTIVO",
-  "atualizadoEm": "2026-10-13T14:00:00-03:00",
-  "observacao": "Dados extraidos do relatorio de Movimentacoes de Empenhos do e-Publica (emissao 13/10/2026), contendo os 21 empenhos do fornecedor para a unidade 2006. Notas fiscais compartilhadas entre mais de um empenho (408261, 408262, 452740 e 482581) tem o valor de face total indicado no campo da nota, com o valor efetivamente aplicado a cada empenho no valor da movimentacao. NF 452740 (R$5.396,46) foi liquidada dividida entre os empenhos 8157, 8158 e 8223. NF 482581 (R$3.130,95) foi liquidada dividida entre os empenhos 8223 e 8225. As NFs 452740, 452746, 482579 e 482581 ainda nao foram recebidas para classificacao na aba Veiculos. O campo Saldo corresponde ao valor 'A liquidar' de cada empenho, conforme consta no relatorio oficial (Empenhado - Liquidado - Anulado - Em liquidacao). Correcao: NF do empenho 203/2026 (sequencia 9674945) corrigida de 395946 para 395846 (erro de digitacao no relatorio anterior). Atualizado em 06/10/2026: liquidacoes de 05/10/2026 (NFs 494975, 494980 e 497433) adicionadas; NFs ainda aguardando classificacao manual na aba Veiculos. Atualizado em 13/10/2026: adicionados os empenhos 12111/2026 (R$11.474,45) e 12112/2026 (R$3.500,00), emitidos em 07/10/2026 e ainda sem liquidacao; corrigidas as datas de emissao das NFs 408261, 408262 e 464505 conforme o relatorio; nenhuma NF nova no periodo.",
+  "atualizadoEm": "2026-10-26T18:30:00-03:00",
+  "observacao": "Dados extraidos do relatorio de Movimentacoes de Empenhos do e-Publica (emissao 13/10/2026), contendo os 21 empenhos do fornecedor para a unidade 2006. Notas fiscais compartilhadas entre mais de um empenho (408261, 408262, 452740 e 482581) tem o valor de face total indicado no campo da nota, com o valor efetivamente aplicado a cada empenho no valor da movimentacao. NF 452740 (R$5.396,46) foi liquidada dividida entre os empenhos 8157, 8158 e 8223. NF 482581 (R$3.130,95) foi liquidada dividida entre os empenhos 8223 e 8225. As NFs 452740, 452746, 482579 e 482581 ainda nao foram recebidas para classificacao na aba Veiculos. O campo Saldo corresponde ao valor 'A liquidar' de cada empenho, conforme consta no relatorio oficial (Empenhado - Liquidado - Anulado - Em liquidacao). Correcao: NF do empenho 203/2026 (sequencia 9674945) corrigida de 395946 para 395846 (erro de digitacao no relatorio anterior). Atualizado em 06/10/2026: liquidacoes de 05/10/2026 (NFs 494975, 494980 e 497433) adicionadas; NFs ainda aguardando classificacao manual na aba Veiculos. Atualizado em 13/10/2026: adicionados os empenhos 12111/2026 (R$11.474,45) e 12112/2026 (R$3.500,00), emitidos em 07/10/2026 e ainda sem liquidacao; corrigidas as datas de emissao das NFs 408261, 408262 e 464505 conforme o relatorio; nenhuma NF nova no periodo. Atualizado em 26/10/2026 (relatorio emitido em 26/10/2026, 23 empenhos): adicionadas as liquidacoes de 16/10 (NFs 513373 e 513374), 19/10 e 20/10/2026 (NF 497431, R$2.425,76, dividida entre os empenhos 8268 e 12111) e os empenhos 12165/2026 (R$1.875,00) e 12166/2026 (R$1.439,40), ainda sem liquidacao. As NFs 497431, 513373 e 513374 estao aguardando classificacao manual pela Raphaella na aba Veiculos.",
   "empenhos": [
     {
       "numero": "202/2026",
@@ -805,9 +805,22 @@
               "valor": 30755.66
             }
           ]
+        },
+        {
+          "data": "2026-10-19",
+          "sequencia": "10218754",
+          "tipo": "Liquidacao de Empenho Orcamentario",
+          "valor": 266.26,
+          "notasFiscais": [
+            {
+              "numero": "497431",
+              "data": "2026-09-01",
+              "valor": 2425.76
+            }
+          ]
         }
       ],
-      "aLiquidar": 266.26
+      "aLiquidar": 0
     },
     {
       "numero": "12111/2026",
@@ -828,9 +841,35 @@
           "tipo": "Emissao de Empenho Orcamentario",
           "valor": 11474.45,
           "notasFiscais": []
+        },
+        {
+          "data": "2026-10-16",
+          "sequencia": "10218158",
+          "tipo": "Liquidacao de Empenho Orcamentario",
+          "valor": 1048.35,
+          "notasFiscais": [
+            {
+              "numero": "513373",
+              "data": "2026-10-01",
+              "valor": 1048.35
+            }
+          ]
+        },
+        {
+          "data": "2026-10-20",
+          "sequencia": "10218755",
+          "tipo": "Liquidacao de Empenho Orcamentario",
+          "valor": 2159.5,
+          "notasFiscais": [
+            {
+              "numero": "497431",
+              "data": "2026-09-01",
+              "valor": 2425.76
+            }
+          ]
         }
       ],
-      "aLiquidar": 11474.45
+      "aLiquidar": 8266.6
     },
     {
       "numero": "12112/2026",
@@ -851,9 +890,68 @@
           "tipo": "Emissao de Empenho Orcamentario",
           "valor": 3500,
           "notasFiscais": []
+        },
+        {
+          "data": "2026-10-16",
+          "sequencia": "10218134",
+          "tipo": "Liquidacao de Empenho Orcamentario",
+          "valor": 1879.81,
+          "notasFiscais": [
+            {
+              "numero": "513374",
+              "data": "2026-10-01",
+              "valor": 1879.81
+            }
+          ]
         }
       ],
-      "aLiquidar": 3500
+      "aLiquidar": 1620.19
+    },
+    {
+      "numero": "12165/2026",
+      "especie": "Estimativa",
+      "categoria": "Comum",
+      "despesa": "164 - 1.2006.27.812.105.2.35.0.339000",
+      "fonteRecurso": "1100 - Recursos nao Vinculados de Impostos",
+      "elementoCodigo": "39",
+      "elementoNome": "Outros Servicos de Terceiros - Pessoa Juridica",
+      "classificacao": "servico",
+      "detalhamento": "19 - manutencao e conservacao de veiculos",
+      "objetoResumido": "EMPENHO ESTIMATIVO PARA FUTURA E EVENTUAL PRESTACAO DE SERVICO, ATRAVES DE EMPRESA ESPECIALIZADA NO GERENCIAMENTO DA MANUTENCAO PREDITIVA, PREVENTIVA E CORRETIVA DE VEICULOS AUTOMOTORES E EQUIPAMENTOS NO MODELO DE AUTOGESTAO, PARA USO NOS VEICULOS AUTOMOTORES E EQUIPAMENTOS DO MUNICIPIO DE CACADOR, LICITACAO COMPARTILHADA REALIZADA PELO CONSORCIO INTERFEDERATIVO SANTA CATARINA CINCATARINA, CNPJ Nº 12.075.748/0001-32. DESTINADO A SECRETARIA DE ESPORTE, CONFORME PROCESSO ADMINISTRATIVO Nº5.381/2026.",
+      "valorEmpenhado": 1875,
+      "movimentacoes": [
+        {
+          "data": "2026-10-13",
+          "sequencia": "10216834",
+          "tipo": "Emissao de Empenho Orcamentario",
+          "valor": 1875,
+          "notasFiscais": []
+        }
+      ],
+      "aLiquidar": 1875
+    },
+    {
+      "numero": "12166/2026",
+      "especie": "Estimativa",
+      "categoria": "Comum",
+      "elementoCodigo": "30",
+      "elementoNome": "Material de Consumo",
+      "classificacao": "material",
+      "detalhamento": "39 - material para manutencao de veiculos",
+      "despesa": "164 - 1.2006.27.812.105.2.35.0.339000",
+      "fonteRecurso": "1100 - Recursos nao Vinculados de Impostos",
+      "objetoResumido": "EMPENHO ESTIMATIVO PARA FUTURA E EVENTUAL AQUISICAO DE MATERIAIS, ATRAVES DE EMPRESA ESPECIALIZADA NO GERENCIAMENTO DA MANUTENCAO PREDITIVA, PREVENTIVA E CORRETIVA DE VEICULOS AUTOMOTORES E EQUIPAMENTOS NO MODELO DE AUTOGESTAO, PARA USO NOS VEICULOS AUTOMOTORES E EQUIPAMENTOS DO MUNICIPIO DE CACADOR, LICITACAO COMPARTILHADA REALIZADA PELO CONSORCIO INTERFEDERATIVO SANTA CATARINA CINCATARINA, CNPJ Nº 12.075.748/0001-32, PROCESSO ADMINISTRATIVO LICITATORIO ELETRONICO N° 0062/2023-E, PREGAO, NA FORMA ELETRONICA Nº 0093/2023. DESTINADO A SECRETARIA DE ESPORTE, CONFORME PROCESSO ADMINISTRATIVO Nº 5.381/2026.",
+      "valorEmpenhado": 1439.4,
+      "movimentacoes": [
+        {
+          "data": "2026-10-13",
+          "sequencia": "10216838",
+          "tipo": "Emissao de Empenho Orcamentario",
+          "valor": 1439.4,
+          "notasFiscais": []
+        }
+      ],
+      "aLiquidar": 1439.4
     }
   ]
-}
+            }
