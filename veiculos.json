@@ -306,10 +306,18 @@
      "tipo": "produto",
      "valor": 3130.95,
      "descricao": "NF 482581 - classificada para a placa RXR1H38 conforme informado pela Raphaella (sem detalhamento da oficina)."
+    },
+    {
+     "data": "2026-10-23",
+     "oficina": "BORRACHARIA CRISTIANO",
+     "grupo": "1093540",
+     "tipo": "servico",
+     "valor": 220.0,
+     "descricao": "VULCANIZACAO DE PNEU (NFS-e 472)"
     }
    ],
-   "totalGasto": 65290.98,
-   "qtdServicos": 13
+   "totalGasto": 65510.98,
+   "qtdServicos": 14
   },
   {
    "placa": "QIJ1629",
@@ -457,10 +465,56 @@
      "tipo": "servico",
      "valor": 1850,
      "descricao": "MAO DE OBRA"
+    },
+    {
+     "data": "2026-10-16",
+     "oficina": "GAF AUTO MECANICA LTDA (GS OFICINA MECANICA)",
+     "grupo": "1089383",
+     "tipo": "produto",
+     "valor": 2173.0,
+     "descricao": "ELEMENTO FILTRO DE COMBUSTIVEL; VELA DE IGNICAO; CABO DA BOBINA DE IGNICAO; PIVO BALANCA INFERIOR (2un); TERMINAL DE DIRECAO DIREITO (2un); ARTICULACAO AXIAL (2un); SENSOR MAF",
+     "itens": [
+      {
+       "descricao": "ELEMENTO FILTRO DE COMBUSTIVEL",
+       "valor": 22.0
+      },
+      {
+       "descricao": "VELA DE IGNICAO",
+       "valor": 155.0
+      },
+      {
+       "descricao": "CABO DA BOBINA DE IGNICAO",
+       "valor": 251.0
+      },
+      {
+       "descricao": "PIVO BALANCA INFERIOR (2un)",
+       "valor": 560.0
+      },
+      {
+       "descricao": "TERMINAL DE DIRECAO DIREITO (2un)",
+       "valor": 360.0
+      },
+      {
+       "descricao": "ARTICULACAO AXIAL (2un)",
+       "valor": 440.0
+      },
+      {
+       "descricao": "SENSOR MAF",
+       "valor": 385.0
+      }
+     ]
+    },
+    {
+     "data": "2026-10-16",
+     "oficina": "GAF AUTO MECANICA LTDA (GS OFICINA MECANICA)",
+     "grupo": "1089383",
+     "tipo": "servico",
+     "valor": 1220.0,
+     "descricao": "MAO DE OBRA MECANICA - PEDIDO 1089383, COTACAO 1280858 (NFS-e 353)"
     }
    ],
-   "totalGasto": 13654,
-   "qtdServicos": 8
+   "totalGasto": 17047.0,
+   "qtdServicos": 10
   },
   {
    "placa": "RAG9A13",
@@ -644,10 +698,72 @@
      "tipo": "servico",
      "valor": 1080,
      "descricao": "MAO DE OBRA ELETRICA/ELETRONICA / CONSERTO SISTEMA ELETRICO AR CONDICIONADO; MAO DE OBRA MECANICA / CONSERTO E AJUSTE PORTA (NFS-e 676 de 24/08/2026, O.S. 25702)"
+    },
+    {
+     "data": "2026-10-09",
+     "oficina": "B G BOMBAS INJETORAS E TRANSPORTES LTDA",
+     "grupo": "1088674",
+     "tipo": "servico",
+     "valor": 1200.0,
+     "descricao": "SERVICO DE MANUTENCAO - PEDIDO 1286228 (NFS-e 11658)"
+    },
+    {
+     "data": "2026-10-14",
+     "oficina": "AUTO COLETIVO CACADOR LTDA",
+     "grupo": "1089317",
+     "tipo": "produto",
+     "valor": 2360.23,
+     "descricao": "ANEL ORING AR CONDICIONADO; FLUIDO LIMPEZA AR CONDICIONADO; GAS AR CONDICIONADO R134A (1,5kg); LONA FREIO (2 jg); MANGUEIRA AR CONDICIONADO; MATERIAL DE LIMPEZA; NITROGENIO; REBITE LONA FREIO LATONA (124un); OLEO COMPRESSOR AR CONDICIONADO",
+     "itens": [
+      {
+       "descricao": "ANEL ORING AR CONDICIONADO",
+       "valor": 42.02
+      },
+      {
+       "descricao": "FLUIDO LIMPEZA AR CONDICIONADO",
+       "valor": 202.0
+      },
+      {
+       "descricao": "GAS AR CONDICIONADO R134A (1,5kg)",
+       "valor": 719.93
+      },
+      {
+       "descricao": "LONA FREIO (2 jg)",
+       "valor": 399.8
+      },
+      {
+       "descricao": "MANGUEIRA AR CONDICIONADO",
+       "valor": 549.9
+      },
+      {
+       "descricao": "MATERIAL DE LIMPEZA",
+       "valor": 50.0
+      },
+      {
+       "descricao": "NITROGENIO",
+       "valor": 150.0
+      },
+      {
+       "descricao": "REBITE LONA FREIO LATONA (124un)",
+       "valor": 48.36
+      },
+      {
+       "descricao": "OLEO COMPRESSOR AR CONDICIONADO",
+       "valor": 198.22
+      }
+     ]
+    },
+    {
+     "data": "2026-10-14",
+     "oficina": "AUTO COLETIVO CACADOR LTDA",
+     "grupo": "1089317",
+     "tipo": "servico",
+     "valor": 2220.0,
+     "descricao": "MAO DE OBRA ELETRICA / AR CONDICIONADO (MANGUEIRA DE ALTA, VALVULA DE ALIVIO, GAS E TESTE DE VAZAMENTO); MAO DE OBRA MECANICA / TROCA DE LONAS DE FREIO DIANTEIRAS E TRASEIRAS (NFS-e 880, O.S. 26432)"
     }
    ],
-   "totalGasto": 10303.66,
-   "qtdServicos": 12
+   "totalGasto": 16083.89,
+   "qtdServicos": 15
   },
   {
    "placa": "SXT4A29",
@@ -693,10 +809,94 @@
        "valor": 30.03
       }
      ]
+    },
+    {
+     "data": "2026-10-15",
+     "oficina": "CARBONI DISTRIBUIDORA DE VEICULOS LTDA",
+     "grupo": "1089882",
+     "tipo": "produto",
+     "valor": 2271.22,
+     "descricao": "ANEL BUJAO CARTER DAILY E6; ELEMENTO FILTRO AR NOVA DAILY; FILTRO AR SECO ELETROVALVULA; FILTRO COMBUSTIVEL DAILY EURO6; FILTRO DE OLEO LUB.; MATERIAL DE LIMPEZA; OLEO MOTOR 5W30 DAILY PETRONAS (9,3 L)",
+     "itens": [
+      {
+       "descricao": "ANEL BUJAO CARTER DAILY E6",
+       "valor": 11.7
+      },
+      {
+       "descricao": "ELEMENTO FILTRO AR NOVA DAILY",
+       "valor": 522.98
+      },
+      {
+       "descricao": "FILTRO AR SECO ELETROVALVULA",
+       "valor": 100.3
+      },
+      {
+       "descricao": "FILTRO COMBUSTIVEL DAILY EURO6",
+       "valor": 624.1
+      },
+      {
+       "descricao": "FILTRO DE OLEO LUB.",
+       "valor": 183.04
+      },
+      {
+       "descricao": "MATERIAL DE LIMPEZA",
+       "valor": 36.09
+      },
+      {
+       "descricao": "OLEO MOTOR 5W30 DAILY PETRONAS (9,3 L)",
+       "valor": 793.01
+      }
+     ]
+    },
+    {
+     "data": "2026-10-15",
+     "oficina": "CARBONI DISTRIBUIDORA DE VEICULOS LTDA",
+     "grupo": "1089882",
+     "tipo": "servico",
+     "valor": 600.0,
+     "descricao": "REVISAO M-1 - SERVICO DE MANUTENCAO PROGRAMADA M1 (NFS-e 4522, O.S. 188301)"
+    },
+    {
+     "data": "2026-10-20",
+     "oficina": "CARBONI DISTRIBUIDORA DE VEICULOS LTDA",
+     "grupo": "1090611",
+     "tipo": "produto",
+     "valor": 1439.4,
+     "descricao": "PASTILHA FREIO DAILY DIANTEIRA NEXPRO; PASTILHA FREIO DAILY TRASEIRA NEXPRO; SENSOR PASTILHA TRASEIRA (JG); SENSOR DE FREIO NEXPRO; SENSOR",
+     "itens": [
+      {
+       "descricao": "PASTILHA FREIO DAILY DIANTEIRA NEXPRO",
+       "valor": 367.48
+      },
+      {
+       "descricao": "PASTILHA FREIO DAILY TRASEIRA NEXPRO",
+       "valor": 401.14
+      },
+      {
+       "descricao": "SENSOR PASTILHA TRASEIRA (JG)",
+       "valor": 273.22
+      },
+      {
+       "descricao": "SENSOR DE FREIO NEXPRO",
+       "valor": 101.53
+      },
+      {
+       "descricao": "SENSOR",
+       "valor": 296.03
+      }
+     ]
+    },
+    {
+     "data": "2026-10-20",
+     "oficina": "CARBONI DISTRIBUIDORA DE VEICULOS LTDA",
+     "grupo": "1090611",
+     "tipo": "servico",
+     "valor": 1875.0,
+     "descricao": "MAO DE OBRA ELETRICA; SUBST. SENSOR PRESSAO DE AR; TROCAR PASTILHAS DE FREIO DIANTEIRAS E TRASEIRAS DAILY (NFS-e 4569, O.S. 188301)"
     }
    ],
-   "totalGasto": 2733.79,
-   "qtdServicos": 1
+   "totalGasto": 8919.41,
+   "qtdServicos": 5
   },
   {
    "placa": "QIV6694",
@@ -766,10 +966,44 @@
        "valor": 442.8
       }
      ]
+    },
+    {
+     "data": "2026-10-14",
+     "oficina": "BORRACHARIA CRISTIANO",
+     "grupo": "1089413",
+     "tipo": "servico",
+     "valor": 50.0,
+     "descricao": "CONSERTO DE PNEU (NFS-e 462)"
+    },
+    {
+     "data": "2026-10-22",
+     "oficina": "VALMIR SOUZA DE ANDRADE (ANDRADE AUTOMECANICA)",
+     "grupo": "1091461",
+     "tipo": "produto",
+     "valor": 680.0,
+     "descricao": "DISCO DE FREIO DIANTEIRO; KIT PASTILHA DE FREIO",
+     "itens": [
+      {
+       "descricao": "DISCO DE FREIO DIANTEIRO",
+       "valor": 400.0
+      },
+      {
+       "descricao": "KIT PASTILHA DE FREIO",
+       "valor": 280.0
+      }
+     ]
+    },
+    {
+     "data": "2026-10-22",
+     "oficina": "VALMIR SOUZA DE ANDRADE (ANDRADE AUTOMECANICA)",
+     "grupo": "1091461",
+     "tipo": "servico",
+     "valor": 300.0,
+     "descricao": "MAO DE OBRA - O.S. 1288122 (NFS-e 203)"
     }
    ],
-   "totalGasto": 2317.8,
-   "qtdServicos": 5
+   "totalGasto": 3347.8,
+   "qtdServicos": 8
   },
   {
    "placa": "QIF4649",
@@ -942,7 +1176,7 @@
    "descricao": "Nota fiscal pendente de classificacao (adicionada automaticamente)"
   }
  ],
- "totalGeral": 101325.34,
- "observacao": "Notas fiscais de produto (pecas) e servico (mao de obra) sao exibidas separadamente por Nota Fiscal (NF). NF 1007369 (TECNICAR, R$9.320,00) e NF 911924 (R$39,20) foram associadas as placas QIJ1629 e QIF4649 conforme confirmacao da responsavel. NFs 482579 (R$2.299,77) e 482581 (R$3.130,95) classificadas para RXR1H38 em 05/10/2026 conforme a Raphaella. Adicionados os servicos do pedido 1050997 (QIF4649, MECANICA MEZALIRA, pecas R$2.426,00 + mao de obra R$890,00, NF-e 000006322 e NFSe 000000546 de 27/07/2026) e do pedido 1059684 (RXR1H38, CASA DO ONIBUS/AUTO COLETIVO CACADOR LTDA, pecas R$30.758,74 + mao de obra R$7.980,00, NF-e 000022866 e NFS-e 621 de 04/08/2026), conforme notas fiscais e nota de gestao MaxiFrota recebidas em 02-03/09/2026. Essas cobrancas ainda nao apareciam no relatorio de Movimentacao de Empenhos do e-Publica ate 31/08/2026. Em 05/10/2026: adicionado o servico do pedido 1067112 (RAG9A13, AUTO COLETIVO CACADOR LTDA, mao de obra R$1.080,00, NFS-e 676 de 24/08/2026, O.S. 25702); pecas desse pedido nao foram enviadas. Adicionado o pedido 1084567 (RXR1H38, MV ELETROMECANICA: pecas R$50,00 NF-e 692 + mao de obra R$800,00 NFS-e 74, de 29/09/2026), conforme informado pela Raphaella. NF 497433 (R$889,91) classificada para QIF4649 em 06/10/2026, conforme a Raphaella. NFs 494975 (R$30.755,66) e 494980 (R$7.979,20) nao foram lancadas no RAG9A13 por parecerem corresponder ao pedido 1059684 ja lancado. Em 26/10/2026: NFs 497431 (R$2.425,76), 513373 (R$1.048,35) e 513374 (R$1.879,81) adicionadas em semVeiculo, aguardando classificacao manual pela Raphaella.",
- "atualizadoEm": "2026-10-26T18:30:00-03:00"
+ "totalGeral": 117934.19,
+ "observacao": "Notas fiscais de produto (pecas) e servico (mao de obra) sao exibidas separadamente por Nota Fiscal (NF). NF 1007369 (TECNICAR, R$9.320,00) e NF 911924 (R$39,20) foram associadas as placas QIJ1629 e QIF4649 conforme confirmacao da responsavel. NFs 482579 (R$2.299,77) e 482581 (R$3.130,95) classificadas para RXR1H38 em 05/10/2026 conforme a Raphaella. Adicionados os servicos do pedido 1050997 (QIF4649, MECANICA MEZALIRA, pecas R$2.426,00 + mao de obra R$890,00, NF-e 000006322 e NFSe 000000546 de 27/07/2026) e do pedido 1059684 (RXR1H38, CASA DO ONIBUS/AUTO COLETIVO CACADOR LTDA, pecas R$30.758,74 + mao de obra R$7.980,00, NF-e 000022866 e NFS-e 621 de 04/08/2026), conforme notas fiscais e nota de gestao MaxiFrota recebidas em 02-03/09/2026. Essas cobrancas ainda nao apareciam no relatorio de Movimentacao de Empenhos do e-Publica ate 31/08/2026. Em 05/10/2026: adicionado o servico do pedido 1067112 (RAG9A13, AUTO COLETIVO CACADOR LTDA, mao de obra R$1.080,00, NFS-e 676 de 24/08/2026, O.S. 25702); pecas desse pedido nao foram enviadas. Adicionado o pedido 1084567 (RXR1H38, MV ELETROMECANICA: pecas R$50,00 NF-e 692 + mao de obra R$800,00 NFS-e 74, de 29/09/2026), conforme informado pela Raphaella. NF 497433 (R$889,91) classificada para QIF4649 em 06/10/2026, conforme a Raphaella. NFs 494975 (R$30.755,66) e 494980 (R$7.979,20) nao foram lancadas no RAG9A13 por parecerem corresponder ao pedido 1059684 ja lancado. Em 26/10/2026: NFs 497431 (R$2.425,76), 513373 (R$1.048,35) e 513374 (R$1.879,81) adicionadas em semVeiculo, aguardando classificacao manual pela Raphaella. Em 10/11/2026: adicionadas as NFs de outubro/2026 do fechamento MaxiFrota (Nota Salvador 00525198 de pecas R$8.922,96 e 00525190 de servicos R$7.684,23): pecas R$8.923,85 (pedidos 1089317, 1089383, 1089882, 1090611 e 1091461) e mao de obra R$7.685,00 (pedidos 1088674, 1089317, 1089383, 1089413, 1089882, 1090611, 1091461 e 1093540), total R$16.608,85.",
+ "atualizadoEm": "2026-11-10T20:15:00-03:00"
 }
